@@ -1,4 +1,4 @@
-# LFNA — Rastreabilidade de Amostras de Solo via Física Nuclear Aplicada
+# LFNA — Rastreabilidade de Amostras de Solo via Técnicas de Física Nuclear Aplicada
 
 **Inovação no combate a fraudes no Crédito Rural e no Seguro Agrícola**
 
@@ -16,7 +16,7 @@
   - [Espectrometria de Raios Gama](#2-espectrometria-de-raios-gama)
   - [Análise Temporal e Correlação Estatística](#3-análise-temporal-e-correlação-estatística)
 - [Contexto Regulatório e Governança](#contexto-regulatório-e-governança)
-- [Fundamentação na Literatura](#fundamentação-na-literatura)
+- [Referências Principais](#referências-principais)
 - [Estrutura do Repositório](#estrutura-do-repositório)
 - [Status e Próximas Etapas](#status-e-próximas-etapas)
 
@@ -60,7 +60,7 @@ Mapeia, de forma não destrutiva, os teores totais de macro e micronutrientes, a
 
 ### 2. Espectrometria de Raios Gama
 
-Avalia a assinatura de radioisótopos naturais (geogênicos) presentes no solo — **Potássio-40 (⁴⁰K), Urânio-238 (²³⁸U) e Tório-232 (²³²Th)**. A distribuição desses radionuclídeos depende diretamente da rocha matriz que originou o solo e dos processos de intemperismo locais, funcionando como um **código geográfico natural** de alta complexidade, difícil de replicar ou falsificar artificialmente. Essa relação entre radioisótopos, mineralogia e textura já é documentada na literatura internacional de espectrometria gama proximal aplicada a solos agrícolas (ver [Fundamentação na Literatura](#fundamentação-na-literatura)).
+Avalia a assinatura de radioisótopos naturais (geogênicos) presentes no solo — **Potássio-40 (⁴⁰K), Urânio-238 (²³⁸U) e Tório-232 (²³²Th)**. A distribuição desses radionuclídeos depende diretamente da rocha matriz que originou o solo e dos processos de intemperismo locais, funcionando como um **código geográfico natural** de alta complexidade, difícil de replicar ou falsificar artificialmente. Essa relação entre radioisótopos, mineralogia e textura já é documentada na literatura internacional de espectrometria gama proximal aplicada a solos agrícolas (ver [Referências Principais](#referências-principais)).
 
 ### 3. Análise Temporal e Correlação Estatística
 
@@ -83,14 +83,28 @@ O monitoramento e a regulamentação das exigências de manejo e conformidade de
 
 O sucesso desta pesquisa representa uma transição relevante para o agronegócio: de amostras físicas vulneráveis a manipulação para **laudos periciais lastreados em assinaturas físicas nucleares**, reforçando a integridade dos recursos investidos anualmente no crédito e no seguro rural brasileiro.
 
-## Fundamentação na Literatura
+## Referências Principais
 
-A revisão de literatura do projeto está documentada em [`Referências/Artigos/Revisões de Artigos`](Referências/Artigos/Revisões%20de%20Artigos/) e inclui, até o momento:
+**Livros e Documentos Técnicos**
 
-1. **Taylor et al. (2023)** — *Portable gamma spectrometry for rapid assessment of soil texture, organic carbon and total nitrogen in agricultural soils.* Journal of Soils and Sediments. Demonstra o uso de espectrômetro gama portátil para prever textura, carbono e nitrogênio do solo a partir da assinatura de ⁴⁰K, ²³⁸U e ²³²Th, com boa correlação estatística (R² ≈ 0,75–0,79). [Revisão completa](Referências/Artigos/Revisões%20de%20Artigos/%5B1%5D%20Taylor%20et%20al.%202023%20-%20Portable%20gamma%20spectrometry%20%28soil%20texture%2C%20SOC%2C%20TN%29.md).
-2. **Pätzold, Leenen & Heggemann (2020)** — *Proximal Mobile Gamma Spectrometry as Tool for Precision Farming and Field Experimentation.* Soil Systems. Testa a transferibilidade de modelos de predição de textura entre diferentes campos e conclui que a calibração **local** (site-specific) supera consistentemente modelos genéricos — evidência direta de que a assinatura gama de um solo é ligada às condições geopedológicas específicas do local, sustentando seu uso como identificador de origem. [Revisão completa](Referências/Artigos/Revisões%20de%20Artigos/%5B2%5D%20P%C3%A4tzold%2C%20Leenen%20%26%20Heggemann%202020%20-%20Proximal%20Mobile%20Gamma%20Spectrometry%20%28precision%20farming%29.md).
+- **IAEA (2003)** — *Guidelines for radioelement mapping using gamma ray spectrometry data.*
+- **HILLEL, D. (1998)** — *Environmental Soil Physics.*
+- **SANTOS et al. (2025)** — *Sistema Brasileiro de Classificação de Solos.*
 
-Esses trabalhos fundamentam tecnicamente duas premissas centrais do projeto: (i) a assinatura de radioisótopos naturais se correlaciona de forma robusta com propriedades físico-químicas do solo; e (ii) essa assinatura é específica de cada local, o que a torna adequada como "código geográfico" para fins de autenticação forense.
+**Artigos**
+
+- **Tighe et al. (2018)** — *Georeferenced soil provenancing with digital signatures.* Scientific Reports.
+- **Mvogo Aloa et al. (2025)** — *Energy dispersive X-ray fluorescence characterization* [de solos].
+- **Owens et al. (2016)** — *Fingerprinting and tracing the sources of soil and sediment.* Earth-Science Reviews.
+
+**Regulamentação**
+
+- Banco Central do Brasil — Manual de Crédito Rural (MCR).
+- MAPA — Zoneamento Agrícola de Risco Climático (ZARC).
+- Embrapa — Plataforma Saúde do Solo BR.
+- IAEA — Coordinated Research Project D52037.
+
+Esses trabalhos fundamentam tecnicamente as premissas centrais do projeto: (i) a assinatura elementar (FRX) e radioisotópica (espectrometria gama) se correlaciona de forma robusta com propriedades físico-químicas e a proveniência do solo; e (ii) essa assinatura é específica de cada local, o que a torna adequada como "código geográfico" para fins de autenticação forense. As resenhas detalhadas de artigos anteriormente revisados permanecem disponíveis em [`Referências/Artigos/Revisões de Artigos`](Referências/Artigos/Revisões%20de%20Artigos/).
 
 ## Estrutura do Repositório
 
@@ -99,11 +113,10 @@ LFNA/
 ├── README.md                                  # Este documento
 └── Referências/
     └── Artigos/
-        ├── [1] Portable gamma spectrometry...pdf
-        ├── [2] Proximal Mobile Gamma Spectrometry...pdf
         └── Revisões de Artigos/
             ├── [1] Taylor et al. 2023 - ...md
-            └── [2] Pätzold, Leenen & Heggemann 2020 - ...md
+            ├── [2] Pätzold, Leenen & Heggemann 2020 - ...md
+            └── nota.md
 ```
 
 ## Status e Próximas Etapas
