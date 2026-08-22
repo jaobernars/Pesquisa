@@ -83,47 +83,5 @@ O monitoramento e a regulamentação das exigências de manejo e conformidade de
 
 O sucesso desta pesquisa representa uma transição relevante para o agronegócio: de amostras físicas vulneráveis a manipulação para **laudos periciais lastreados em assinaturas físicas nucleares**, reforçando a integridade dos recursos investidos anualmente no crédito e no seguro rural brasileiro.
 
-## Referências Principais
+## Referências
 
-**Livros e Documentos Técnicos**
-
-- **IAEA (2003)** — *Guidelines for radioelement mapping using gamma ray spectrometry data.*
-- **HILLEL, D. (1998)** — *Environmental Soil Physics.*
-- **SANTOS et al. (2025)** — *Sistema Brasileiro de Classificação de Solos.*
-
-**Artigos**
-
-- **Tighe et al. (2018)** — *Georeferenced soil provenancing with digital signatures.* Scientific Reports.
-- **Mvogo Aloa et al. (2025)** — *Energy dispersive X-ray fluorescence characterization* [de solos].
-- **Owens et al. (2016)** — *Fingerprinting and tracing the sources of soil and sediment.* Earth-Science Reviews.
-
-**Regulamentação**
-
-- Banco Central do Brasil — Manual de Crédito Rural (MCR).
-- MAPA — Zoneamento Agrícola de Risco Climático (ZARC).
-- Embrapa — Plataforma Saúde do Solo BR.
-- IAEA — Coordinated Research Project D52037.
-
-Esses trabalhos fundamentam tecnicamente as premissas centrais do projeto: (i) a assinatura elementar (FRX) e radioisotópica (espectrometria gama) se correlaciona de forma robusta com propriedades físico-químicas e a proveniência do solo; e (ii) essa assinatura é específica de cada local, o que a torna adequada como "código geográfico" para fins de autenticação forense. As resenhas detalhadas de artigos anteriormente revisados permanecem disponíveis em [`Referências/Artigos/Revisões de Artigos`](Referências/Artigos/Revisões%20de%20Artigos/).
-
-## Estrutura do Repositório
-
-```
-LFNA/
-├── README.md                                  # Este documento
-└── Referências/
-    └── Artigos/
-        └── Revisões de Artigos/
-            ├── [1] Taylor et al. 2023 - ...md
-            ├── [2] Pätzold, Leenen & Heggemann 2020 - ...md
-            └── nota.md
-```
-
-## Status e Próximas Etapas
-
-Projeto em fase de **revisão de literatura e desenho metodológico**. Próximos passos previstos:
-
-- [ ] Ampliar a revisão bibliográfica sobre FRX aplicada à autenticação forense de solos (proveniência geoquímica).
-- [ ] Definir protocolo de amostragem e linha de base para propriedades-piloto.
-- [ ] Especificar os modelos estatísticos de correlação temporal (regressão, classificação, detecção de anomalias).
-- [ ] Avaliar formatos de integração com bancos de dados existentes (ex.: Saúde dos Solos BR, ZARC).
