@@ -17,9 +17,6 @@
   - [Dirac vs. Majorana: Duas Naturezas Possíveis para a Massa](#3-dirac-vs-majorana-duas-naturezas-possíveis-para-a-massa)
   - [Violação do Número Leptônico e a Assimetria Matéria-Antimatéria](#4-violação-do-número-leptônico-e-a-assimetria-matéria-antimatéria)
   - [Decaimento Duplo Beta sem Neutrinos e a Massa Efetiva de Majorana](#5-decaimento-duplo-beta-sem-neutrinos-e-a-massa-efetiva-de-majorana)
-- [Metodologia](#metodologia)
-- [Estrutura do Repositório](#estrutura-do-repositório)
-- [Status e Próximas Etapas](#status-e-próximas-etapas)
 
 ---
 
@@ -87,34 +84,3 @@ Diferentemente do decaimento duplo beta padrão (permitido no Modelo Padrão e j
 $$m_{\beta\beta} = \left| \sum_{i=1}^{3} U_{ei}^2\, m_i \right| = \left| m_1 |U_{e1}|^2 + m_2 |U_{e2}|^2 e^{i\alpha_1} + m_3 |U_{e3}|^2 e^{i\alpha_2} \right|$$
 
 Note-se que $m_{\beta\beta}$ depende explicitamente das fases de Majorana $\alpha_1, \alpha_2$ — que não são acessíveis por experimentos de oscilação, precisamente porque estes são insensíveis à natureza de Dirac ou Majorana da massa. A observação de $0\nu\beta\beta$ estabeleceria, portanto, não apenas a natureza de Majorana dos neutrinos, mas forneceria também uma medida da escala absoluta de massa e um vínculo direto sobre suas fases de violação de CP.
-
-## Metodologia
-
-Trata-se de um projeto de natureza **teórico-analítica**, sem componente experimental direta, estruturado em torno da derivação e do estudo crítico do formalismo relevante:
-
-1. **Revisão bibliográfica sistemática** da literatura fundamental (livros-texto de física de neutrinos e teoria quântica de campos) e de artigos de referência sobre oscilação, massa de Majorana e decaimento $0\nu\beta\beta$, documentada em [`Referências Bibliográficas`](Referências%20Bibliográficas/).
-2. **Derivação analítica** do formalismo de Majorana a partir da equação de Dirac e da álgebra de espinores, incluindo a construção explícita da condição $\psi = \psi^c$ e suas consequências para o número de graus de liberdade físicos do campo.
-3. **Construção da matriz PMNS estendida**, parametrizando-a em termos dos ângulos de mistura ($\theta_{12}, \theta_{23}, \theta_{13}$), da fase de Dirac ($\delta$) e das fases de Majorana ($\alpha_1, \alpha_2$), e análise de sua unitariedade.
-4. **Formulação e análise da massa efetiva de Majorana** ($m_{\beta\beta}$), examinando sua dependência da hierarquia de massa (normal vs. invertida) e das incertezas experimentais nos parâmetros de mistura.
-5. **Cotejamento com dados experimentais atuais**, situando os resultados analíticos frente aos limites superiores estabelecidos por experimentos de busca de $0\nu\beta\beta$ (e.g., GERDA, KamLAND-Zen, CUORE) e às perspectivas de experimentos de próxima geração.
-
-## Estrutura do Repositório
-
-```
-Dirac or Majorana Neutrinos, Phenomenological Consequences/
-├── README.md                          # Este documento
-├── Estudo/                            # Notas, derivações e desenvolvimento analítico
-└── Referências Bibliográficas/
-    ├── Livros/                        # Livros-texto de referência
-    └── Artigos/                       # Artigos científicos de referência
-```
-
-## Status e Próximas Etapas
-
-Projeto em fase de **revisão bibliográfica e desenvolvimento do formalismo teórico**. Próximos passos previstos:
-
-- [ ] Levantar e revisar a bibliografia fundamental sobre férmions de Majorana e o mecanismo seesaw.
-- [ ] Desenvolver, em notas de estudo, a derivação completa da equação de Majorana e sua relação com a equação de Dirac.
-- [ ] Formalizar a parametrização da matriz PMNS com as fases de Dirac e de Majorana.
-- [ ] Derivar a expressão da massa efetiva de Majorana e discutir sua dependência da hierarquia de massa dos neutrinos.
-- [ ] Levantar os limites experimentais atuais sobre $m_{\beta\beta}$ e compará-los às previsões teóricas discutidas.
