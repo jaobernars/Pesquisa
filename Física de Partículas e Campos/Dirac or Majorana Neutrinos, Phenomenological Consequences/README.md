@@ -2,7 +2,7 @@
 
 **Natureza da massa dos neutrinos e suas consequências fenomenológicas**
 
-> Pesquisa teórico-analítica em Física de Partículas e Campos sobre o formalismo dos férmions de Majorana, a matriz de mistura PMNS e a massa efetiva de Majorana no contexto do decaimento duplo beta sem neutrinos ($0\nu\beta\beta$).
+> Pesquisa teórica em Física de Partículas e Campos sobre o formalismo dos férmions de Majorana, a matriz de mistura PMNS e a massa efetiva de Majorana no contexto do decaimento duplo beta sem neutrinos ($0\nu\beta\beta$).
 
 ---
 
