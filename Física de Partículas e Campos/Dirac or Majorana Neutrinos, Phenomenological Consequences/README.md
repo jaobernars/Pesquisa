@@ -1,8 +1,8 @@
 # Dirac or Majorana Neutrinos — Phenomenological Consequences
 
-**Natureza da massa dos neutrinos e suas consequências fenomenológicas**
+**Título**: Natureza da massa dos neutrinos e suas consequências fenomenológicas
 
-> Pesquisa teórica em Física de Partículas e Campos sobre o formalismo dos férmions de Majorana, a matriz de mistura PMNS e a massa efetiva de Majorana no contexto do decaimento duplo beta sem neutrinos ($0\nu\beta\beta$).
+> **Objetivo de Pesquisa**:  Pesquisa teórica em Física de Partículas e Campos sobre o formalismo dos férmions de Majorana, a matriz de mistura PMNS e a massa efetiva de Majorana no contexto do decaimento duplo beta sem neutrinos ($0\nu\beta\beta$).
 
 ---
 
@@ -22,11 +22,11 @@
 
 ## Introdução
 
-Os neutrinos são partículas elementares propostas por Wolfgang Pauli em 1930 como uma "solução desesperada" para o problema do espectro contínuo observado no decaimento beta nuclear. Sem a existência de uma partícula neutra, leve e de interação fraquíssima emitida junto ao elétron, o decaimento beta pareceria violar os princípios de conservação de energia, momento linear e momento angular. A hipótese de Pauli — batizada de "neutrino" por Enrico Fermi, que a incorporou em 1934 em sua teoria quanticamente consistente do decaimento beta — preservou esses princípios fundamentais e inaugurou o estudo de uma das partículas mais abundantes e, ao mesmo tempo, mais elusivas do universo.
+Os neutrinos são partículas elementares propostas por Wolfgang Pauli em 1930 como uma "solução desesperada" para o problema do espectro contínuo observado no decaimento beta nuclear. Sem a existência de uma partícula neutra, leve e de interação fraquíssima emitida junto ao elétron, o decaimento beta pareceria violar os princípios de conservação de energia, momento linear e momento angular. A hipótese de Pauli, batizada de "neutrino" por Enrico Fermi, que a incorporou em 1934 em sua teoria quanticamente consistente do decaimento beta, preservou esses princípios fundamentais e inaugurou o estudo de uma das partículas mais abundantes e, ao mesmo tempo, mais elusivas do universo.
 
-No arcabouço do Modelo Padrão da física de partículas, os neutrinos são férmions de spin $1/2$ pertencentes à família dos léptons, desprovidos de carga elétrica e de carga de cor, interagindo exclusivamente via força fraca (e gravitacionalmente). Existem três estados de sabor, associados aos respectivos léptons carregados: o neutrino eletrônico ($\nu_e$), o muônico ($\nu_\mu$) e o tauônico ($\nu_\tau$). Na formulação original do Modelo Padrão, os neutrinos eram tratados como partículas estritamente não massivas — uma simplificação que se mostrou incompatível com a observação experimental.
+No arcabouço do Modelo Padrão da física de partículas, os neutrinos são férmions de spin $1/2$ pertencentes à família dos léptons, desprovidos de carga elétrica e de carga de cor, interagindo exclusivamente via força fraca (e gravitacionalmente). Existem três estados de sabor, associados aos respectivos léptons carregados: o neutrino eletrônico ($\nu_e$), o muônico ($\nu_\mu$) e o tauônico ($\nu_\tau$). Na formulação original do Modelo Padrão, os neutrinos eram tratados como partículas estritamente não massivas, uma simplificação que se mostrou incompatível com a observação experimental.
 
-Este projeto propõe um estudo analítico e teórico da questão hoje mais fundamental em aberto sobre os neutrinos: **qual é a natureza intrínseca de sua massa?** A resposta a essa pergunta — se os neutrinos são férmions de Dirac ou de Majorana — carrega implicações que extrapolam a física de partículas, tocando a cosmologia e a própria razão pela qual existe mais matéria do que antimatéria no universo observável.
+Este projeto propõe um estudo analítico e teórico da questão hoje mais fundamental em aberto sobre os neutrinos: **qual é a natureza intrínseca de sua massa?** A resposta a essa pergunta, se os neutrinos são férmions de Dirac ou de Majorana, carrega implicações que extrapolam a física de partículas, tocando a própria razão pela qual existe mais matéria do que antimatéria no universo observável.
 
 ## Motivação
 
@@ -34,7 +34,7 @@ Durante décadas, a hipótese de neutrinos com massa nula foi sustentada tanto p
 
 A oscilação só é possível se os autoestados de sabor ($\nu_e, \nu_\mu, \nu_\tau$) — nos quais os neutrinos são produzidos e detectados via interação fraca — forem combinações lineares de autoestados de massa ($\nu_1, \nu_2, \nu_3$), que evoluem no espaço-tempo com fases distintas por possuírem massas distintas. A observação da oscilação é, portanto, prova inequívoca de que **ao menos dois dos três neutrinos possuem massa não nula**, contrariando a formulação original do Modelo Padrão e abrindo uma das poucas janelas experimentais conhecidas para física além dele.
 
-Entretanto, os experimentos de oscilação — por dependerem de um termo de interferência entre autoestados de massa — são sensíveis apenas às **diferenças dos quadrados das massas** ($\Delta m^2_{21}$ e $\Delta m^2_{31}$), e não à escala absoluta de massa, tampouco à natureza intrínseca dessa massa. Como os neutrinos são os únicos férmions elementares eletricamente neutros do Modelo Padrão, essa lacuna teórica admite duas soluções fisicamente distintas e experimentalmente distinguíveis, cuja elucidação está entre os objetivos mais perseguidos da física de partículas contemporânea. É essa lacuna — e suas profundas consequências fenomenológicas — que motiva o presente projeto.
+Entretanto, os experimentos de oscilação — por dependerem de um termo de interferência entre autoestados de massa — são sensíveis apenas às **diferenças dos quadrados das massas** ($\Delta m^2_{21}$ e $\Delta m^2_{31}$), e não à escala absoluta de massa, tampouco à natureza intrínseca dessa massa. Como os neutrinos são os únicos férmions elementares eletricamente neutros do Modelo Padrão, essa lacuna teórica admite duas soluções fisicamente distintas e experimentalmente distinguíveis, cuja elucidação está entre os objetivos mais perseguidos da física de partículas contemporânea. É essa lacuna, e suas profundas consequências fenomenológicas — que motiva o presente projeto.
 
 ## Objetivos
 
@@ -52,7 +52,7 @@ Entretanto, os experimentos de oscilação — por dependerem de um termo de int
 
 ### 1. O Neutrino no Modelo Padrão
 
-No setor eletrofraco do Modelo Padrão, os neutrinos surgem como a componente neutra dos dubletos de isospin fraco left-handed, sem um parceiro right-handed correspondente na formulação mínima da teoria. Essa ausência é, por construção, a razão pela qual o mecanismo usual de Brout-Englert-Higgs — responsável por gerar a massa dos quarks e dos léptons carregados via acoplamento de Yukawa entre as componentes left- e right-handed de cada férmion — não pode gerar massa para os neutrinos sem uma extensão do conteúdo de campos da teoria.
+No setor eletrofraco do Modelo Padrão, os neutrinos surgem como a componente neutra dos dubletos de isospin fraco left-handed, sem um parceiro right-handed correspondente na formulação mínima da teoria. Essa ausência é, por construção, a razão pela qual o mecanismo usual de Brout-Englert-Higgs, responsável por gerar a massa dos quarks e dos léptons carregados via acoplamento de Yukawa entre as componentes left- e right-handed de cada férmion, não pode gerar massa para os neutrinos sem uma extensão do conteúdo de campos da teoria.
 
 ### 2. Oscilação de Neutrinos e a Matriz PMNS
 
@@ -71,7 +71,7 @@ A distinção entre as duas hipóteses está na estrutura do termo de massa admi
 
 ### 4. Violação do Número Leptônico e a Assimetria Matéria-Antimatéria
 
-A confirmação da natureza de Majorana implica diretamente a violação da conservação do número leptônico total ($\Delta L = 2$) em processos fundamentais. Essa violação, combinada à violação de CP nas fases da matriz PMNS, fornece os três ingredientes das condições de Sakharov necessários para gerar dinamicamente uma assimetria entre matéria e antimatéria a partir de um universo primordial simétrico. O mecanismo de **leptogênese** — no qual um excesso de número leptônico gerado no universo primordial é parcialmente convertido em excesso de número bariônico por processos eletrofracos (esfalerons) — depende crucialmente da existência de neutrinos de Majorana pesados, conectando a fenomenologia de baixas energias estudada neste projeto à cosmologia do universo primordial.
+A confirmação da natureza de Majorana implica diretamente a violação da conservação do número leptônico total ($\Delta L = 2$) em processos fundamentais. Essa violação, combinada à violação de CP nas fases da matriz PMNS, fornece os três ingredientes das condições de Sakharov necessários para gerar dinamicamente uma assimetria entre matéria e antimatéria a partir de um universo primordial simétrico. O mecanismo de **leptogênese**, no qual um excesso de número leptônico gerado no universo primordial é parcialmente convertido em excesso de número bariônico por processos eletrofracos (esfalerons), depende crucialmente da existência de neutrinos de Majorana pesados, conectando a fenomenologia de baixas energias estudada neste projeto à cosmologia do universo primordial.
 
 ### 5. Decaimento Duplo Beta sem Neutrinos e a Massa Efetiva de Majorana
 
