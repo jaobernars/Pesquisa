@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Gera dados/referencias_organizadas.xlsx: versao legivel/esquematizada
-das tabelas refs_agostini.csv e refs_gonzalez.csv, com colunas separadas
-e formatacao (cabecalho, largura, congelamento, filtro, quebra de linha).
+"""Gera dois arquivos .xlsx (um por fonte) com versao legivel/esquematizada
+das tabelas refs_agostini.csv e refs_gonzalez.csv: colunas separadas e
+formatacao (cabecalho, largura, congelamento, filtro, quebra de linha).
 Nao altera os CSVs originais usados pelo pipeline (consolidar.py etc)."""
 import pandas as pd
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
@@ -58,41 +58,29 @@ def montar_gonzalez():
     return df[["ID", "Fonte", "Autor(es)", "Ano", "Título", "Periódico", "Volume", "Página",
                "arXiv", "DOI", "Citação Completa"]]
 
-def montar_resumo(df_a, df_g):
-    linhas = [
-        ["Fonte", "Nº de referências", "Com arXiv", "Com DOI", "Com Título extraído"],
-        ["AGOSTINI", len(df_a), (df_a["arXiv"] != "").sum(), (df_a["DOI"] != "").sum(), (df_a["Título"] != "").sum()],
-        ["GONZALEZ-GARCIA", len(df_g), (df_g["arXiv"] != "").sum(), (df_g["DOI"] != "").sum(), (df_g["Título"] != "").sum()],
-        ["TOTAL", len(df_a) + len(df_g), (df_a["arXiv"] != "").sum() + (df_g["arXiv"] != "").sum(),
-         (df_a["DOI"] != "").sum() + (df_g["DOI"] != "").sum(),
-         (df_a["Título"] != "").sum() + (df_g["Título"] != "").sum()],
-    ]
-    return pd.DataFrame(linhas[1:], columns=linhas[0])
+def salvar_arquivo(out_path, sheet_name, df, wrap_cols, widths):
+    with pd.ExcelWriter(out_path, engine="openpyxl") as writer:
+        df.to_excel(writer, sheet_name=sheet_name, index=False)
+        formatar_planilha(writer.sheets[sheet_name], df, wrap_cols=wrap_cols, widths=widths)
+    print(f"OK -> {out_path} ({len(df)} linhas)")
 
 def main():
     df_a = montar_agostini()
     df_g = montar_gonzalez()
-    df_r = montar_resumo(df_a, df_g)
 
-    out_path = "dados/referencias_organizadas.xlsx"
-    with pd.ExcelWriter(out_path, engine="openpyxl") as writer:
-        df_r.to_excel(writer, sheet_name="Resumo", index=False)
-        df_a.to_excel(writer, sheet_name="Agostini", index=False)
-        df_g.to_excel(writer, sheet_name="Gonzalez-Garcia", index=False)
-
-        formatar_planilha(writer.sheets["Resumo"], df_r)
-        formatar_planilha(writer.sheets["Agostini"], df_a,
-                           wrap_cols={"Título", "Citação Completa"},
-                           widths={"ID": 10, "Fonte": 12, "Autor(es)": 22, "Ano": 8,
-                                    "Título": 55, "arXiv": 16, "DOI": 22, "Citação Completa": 70})
-        formatar_planilha(writer.sheets["Gonzalez-Garcia"], df_g,
-                           wrap_cols={"Título", "Citação Completa"},
-                           widths={"ID": 10, "Fonte": 18, "Autor(es)": 24, "Ano": 8,
-                                    "Título": 40, "Periódico": 20, "Volume": 10, "Página": 10,
-                                    "arXiv": 16, "DOI": 22, "Citação Completa": 70})
-
-    print(f"OK -> {out_path}")
-    print(f"Agostini: {len(df_a)} linhas | Gonzalez-Garcia: {len(df_g)} linhas")
+    salvar_arquivo(
+        "dados/refs_agostini_organizado.xlsx", "Agostini", df_a,
+        wrap_cols={"Título", "Citação Completa"},
+        widths={"ID": 10, "Fonte": 12, "Autor(es)": 22, "Ano": 8,
+                "Título": 55, "arXiv": 16, "DOI": 22, "Citação Completa": 70},
+    )
+    salvar_arquivo(
+        "dados/refs_gonzalez_organizado.xlsx", "Gonzalez-Garcia", df_g,
+        wrap_cols={"Título", "Citação Completa"},
+        widths={"ID": 10, "Fonte": 18, "Autor(es)": 24, "Ano": 8,
+                "Título": 40, "Periódico": 20, "Volume": 10, "Página": 10,
+                "arXiv": 16, "DOI": 22, "Citação Completa": 70},
+    )
 
 if __name__ == "__main__":
     main()
