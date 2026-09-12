@@ -4,7 +4,7 @@ Ordem dos blocos: refs COM arXiv primeiro (busca exata), depois as SEM arXiv
 (busca por journal/titulo). Dentro de cada grupo, ordem cronologica."""
 import csv,re,collections
 rows=[]
-for p in ('dados/refs_agostini.csv','dados/refs_gonzalez.csv'):
+for p in ('dados/ref/refs_agostini.csv','dados/ref/refs_gonzalez.csv'):
     for r in csv.DictReader(open(p,encoding='utf-8')):
         r.setdefault('journal',''); r.setdefault('titulo',''); rows.append(r)
 def key(r):
@@ -33,7 +33,7 @@ for i,m in enumerate(ordered):
     m['metodo']='arxiv' if m['arxiv'] else ('doi' if m['doi'] else ('journal' if m['journal'] else 'titulo'))
     m['ref_ids']=';'.join(m['ref_ids']); m['fontes']=';'.join(sorted(m['fontes']))
 cols=['uid','bloco','metodo','fontes','ref_ids','autor','ano','arxiv','doi','journal','titulo','raw']
-with open('dados/master_refs.csv','w',newline='',encoding='utf-8') as f:
+with open('dados/master ref/master_refs.csv','w',newline='',encoding='utf-8') as f:
     w=csv.DictWriter(f,fieldnames=cols);w.writeheader()
     for m in ordered: w.writerow({c:m[c] for c in cols})
 c=collections.Counter(m['bloco'] for m in ordered)

@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
-"""Gera dados/master_refs_organizado.xlsx: versao legivel/esquematizada
+"""Gera dados/master ref/master_refs.xlsx: versao legivel/esquematizada
 de 'dados/master ref/master_refs.csv' (lista mestre deduplicada, unindo
 AGOSTINI e GONZALEZ-GARCIA), com colunas separadas e formatacao.
 Nao altera o CSV original usado pelo pipeline (consolidar.py etc).
-Saida fica direto em dados/ (nome curto) para nao ultrapassar o limite
-de 260 caracteres de caminho do Windows/Excel."""
+Nome de saida curto ("master_refs.xlsx", nao "..._organizado.xlsx") para
+nao ultrapassar o limite de 260 caracteres de caminho do Windows/Excel."""
 import pandas as pd
-from organizar_tabelas import formatar_planilha
+from export_refs import formatar_planilha
 
 ENTRADA = "dados/master ref/master_refs.csv"
-SAIDA = "dados/master_refs_organizado.xlsx"
+SAIDA = "dados/master ref/master_refs.xlsx"
 
 RENOMEIA = {
     "uid": "ID", "bloco": "Bloco", "metodo": "Método de Casamento",

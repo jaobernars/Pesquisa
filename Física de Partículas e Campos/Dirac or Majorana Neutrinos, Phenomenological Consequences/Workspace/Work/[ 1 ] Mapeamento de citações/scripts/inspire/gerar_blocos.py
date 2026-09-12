@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import csv,os,collections,json
 os.makedirs('tarefas/blocos',exist_ok=True)
-rows=list(csv.DictReader(open('dados/master_refs.csv',encoding='utf-8')))
+rows=list(csv.DictReader(open('dados/master ref/master_refs.csv',encoding='utf-8')))
 by=collections.OrderedDict()
 for r in rows: by.setdefault(r['bloco'],[]).append(r)
 idx=[]

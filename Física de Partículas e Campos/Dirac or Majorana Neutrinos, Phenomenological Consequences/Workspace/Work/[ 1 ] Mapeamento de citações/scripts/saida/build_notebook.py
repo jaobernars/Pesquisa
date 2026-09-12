@@ -95,7 +95,7 @@ plt.rcParams.update({
 })
 ANO_REF = 2026   # ano de referencia para calcular idade e taxa de citacao
 
-def carregar(caminho='dados/dados_citacoes.csv', campo='citacoes'):
+def carregar(caminho='dados/citacoes/dados_citacoes.csv', campo='citacoes'):
     '''Le a tabela consolidada, descarta duplicatas por inspire_id e o que nao tem citacao.'''
     fora = []
     for r in csv.DictReader(open(caminho, encoding='utf-8')):

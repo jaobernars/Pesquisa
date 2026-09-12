@@ -2,8 +2,8 @@
 """Classifica cada referencia por aderencia ao projeto de IC do Joao
 (natureza Dirac vs Majorana, 0nubb, PMNS estendida com fases de CP, massa efetiva de Majorana).
 
-Entrada: dados/dados_citacoes.csv   Saida: dados/dados_citacoes_tema.csv + shortlist
-Uso: python3 scripts/classificar_tema.py [--top 40]
+Entrada: dados/citacoes/dados_citacoes.csv   Saida: dados/citacoes/dados_citacoes_tema.csv + shortlist
+Uso: python3 scripts/consolidacao_tema/classificar_tema.py [--top 40]
 """
 import csv,re,argparse,collections
 # peso 3 = nucleo teorico do projeto | 2 = adjacente direto | 1 = contexto
@@ -27,7 +27,7 @@ EIXOS={
  'cosmologia':(1,['cosmolog','planck','sum of neutrino masses','big bang nucleosynthesis','dark matter','cmb']),
 }
 ap=argparse.ArgumentParser(); ap.add_argument('--top',type=int,default=40)
-ap.add_argument('--csv',default='dados/dados_citacoes.csv'); a=ap.parse_args()
+ap.add_argument('--csv',default='dados/citacoes/dados_citacoes.csv'); a=ap.parse_args()
 rows=list(csv.DictReader(open(a.csv,encoding='utf-8')))
 for r in rows:
     txt=((r['titulo'] or '')+' '+(r['raw'] or '')).lower()
@@ -37,17 +37,17 @@ for r in rows:
     r['eixos']=';'.join(eixos); r['score_tema']=score
     r['nucleo']='SIM' if any(e in eixos for e in ('majorana_natureza','0nubb','violacao_numero_leptonico','pmns_cp','seesaw_massa')) else 'NAO'
 cols=list(rows[0].keys())
-with open('dados/dados_citacoes_tema.csv','w',newline='',encoding='utf-8') as f:
+with open('dados/citacoes/dados_citacoes_tema.csv','w',newline='',encoding='utf-8') as f:
     w=csv.DictWriter(f,fieldnames=cols);w.writeheader();[w.writerow(r) for r in rows]
 # exclui duplicatas por inspire_id: senao a shortlist lista o mesmo artigo duas vezes
 nuc=[r for r in rows if r['nucleo']=='SIM' and str(r['citacoes']).isdigit()
      and not (r.get('duplicata_de') or '').strip()]
 nuc.sort(key=lambda r:(-int(r['citacoes'])))
-with open('dados/shortlist_leitura.csv','w',newline='',encoding='utf-8') as f:
+with open('dados/shortlist/shortlist_leitura.csv','w',newline='',encoding='utf-8') as f:
     w=csv.DictWriter(f,fieldnames=cols);w.writeheader();[w.writerow(r) for r in nuc[:a.top]]
 c=collections.Counter(e for r in rows for e in r['eixos'].split(';') if e)
 print('classificadas:',len(rows),'| no nucleo tematico:',len(nuc))
 print('por eixo:',dict(c.most_common()))
-print(f'\nTOP {min(a.top,len(nuc))} para leitura (dados/shortlist_leitura.csv):')
+print(f'\nTOP {min(a.top,len(nuc))} para leitura (dados/shortlist/shortlist_leitura.csv):')
 for r in nuc[:a.top]:
     print(f"  {r['citacoes']:>6}  {r['ano_inspire'] or r['ano_ref']}  {(r['titulo'] or '')[:70]}  [{r['eixos']}]")

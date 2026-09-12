@@ -4,10 +4,10 @@ Graficos tempo x citacoes do mapeamento de referencias das duas reviews
 (Agostini et al., RMP "Toward the discovery of matter creation with 0nubb decay"
  e Gonzalez-Garcia et al., PDG "14. Neutrino Masses, Mixing, and Oscillations").
 
-Entrada : dados/dados_citacoes.csv   (gerado por scripts/consolidar.py)
+Entrada : dados/citacoes/dados_citacoes.csv   (gerado por scripts/consolidacao_tema/consolidar.py)
 Saida   : graficos/*.png  e  graficos/*.pdf  (300 dpi, prontos para relatorio)
 
-Uso: python3 scripts/grafico_citacoes.py [--min-cit 0] [--sem-auto]
+Uso: python3 scripts/relatorios/grafico_citacoes.py [--min-cit 0] [--sem-auto]
 """
 import csv, argparse, os, statistics, collections
 import matplotlib
@@ -211,14 +211,14 @@ def fig_top(d, n=30):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--csv', default='dados/dados_citacoes.csv')
+    ap.add_argument('--csv', default='dados/citacoes/dados_citacoes.csv')
     ap.add_argument('--sem-auto', action='store_true', help='usar citações sem autocitação')
     ap.add_argument('--min-cit', type=int, default=0)
     a = ap.parse_args()
     campo = 'citacoes_sem_auto' if a.sem_auto else 'citacoes'
     d = [r for r in carregar(a.csv, campo) if r['_cit'] >= a.min_cit]
     if not d:
-        raise SystemExit('Sem dados: rode scripts/consolidar.py depois de concluir os blocos.')
+        raise SystemExit('Sem dados: rode scripts/consolidacao_tema/consolidar.py depois de concluir os blocos.')
     global COBERTURA
     todas = list(csv.DictReader(open(a.csv, encoding='utf-8')))
     total = len(todas)

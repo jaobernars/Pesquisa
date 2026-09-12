@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Junta resultados/B*.csv com dados/master_refs.csv -> dados/dados_citacoes.csv (tabela final de analise)."""
+"""Junta resultados/B*.csv com dados/master ref/master_refs.csv -> dados/citacoes/dados_citacoes.csv (tabela final de analise)."""
 import csv,glob,os,collections
-master={r['uid']:r for r in csv.DictReader(open('dados/master_refs.csv',encoding='utf-8'))}
+master={r['uid']:r for r in csv.DictReader(open('dados/master ref/master_refs.csv',encoding='utf-8'))}
 res={}
 for p in sorted(glob.glob('resultados/B*.csv')):
     for r in csv.DictReader(open(p,encoding='utf-8')): res[r['uid']]=r
@@ -35,7 +35,7 @@ for r in sorted(out,key=lambda r:r['uid']):
 ndup=sum(1 for r in out if r['duplicata_de'])
 print('duplicatas por inspire_id marcadas:',ndup)
 out.sort(key=lambda r:(r['ano_inspire'] or r['ano_ref'] or '0000', r['uid']))
-with open('dados/dados_citacoes.csv','w',newline='',encoding='utf-8') as f:
+with open('dados/citacoes/dados_citacoes.csv','w',newline='',encoding='utf-8') as f:
     w=csv.DictWriter(f,fieldnames=COLS);w.writeheader();[w.writerow(r) for r in out]
 c=collections.Counter(r['status'] for r in out)
 print('linhas:',len(out),'| status:',dict(c))

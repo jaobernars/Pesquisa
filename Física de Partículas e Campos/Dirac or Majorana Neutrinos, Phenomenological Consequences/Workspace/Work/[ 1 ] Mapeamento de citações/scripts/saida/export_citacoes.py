@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 """Gera versoes .xlsx legiveis/esquematizadas de:
-dados/dados das citacoes/dados_citacoes.csv
-dados/dados das citacoes/dados_citacoes_tema.csv
+dados/citacoes/dados_citacoes.csv
+dados/citacoes/dados_citacoes_tema.csv
 Colunas renomeadas e reordenadas por grupo (identificacao, autoria, datas,
 identificadores, publicacao, citacoes, classificacao tematica, texto bruto).
 Nao altera os CSVs originais usados pelo pipeline.
-Os .xlsx de saida vao direto em dados/ (nao em dados/dados das citacoes/)
-com nomes curtos, porque o caminho completo do projeto ja e muito longo
-e ultrapassava o limite de 260 caracteres do Windows/Excel."""
+A pasta "dados das citações" foi renomeada para "dados/citacoes" (nome
+curto) porque o caminho completo do projeto ja e muito longo e, com o
+nome antigo, ultrapassava o limite de 260 caracteres do Windows/Excel."""
 import pandas as pd
-from organizar_tabelas import formatar_planilha
+from export_refs import formatar_planilha
 
-PASTA_ENTRADA = "dados/dados das citações"
-PASTA_SAIDA = "dados"
+PASTA_ENTRADA = "dados/citacoes"
+PASTA_SAIDA = "dados/citacoes"
 
 RENOMEIA = {
     "uid": "ID", "bloco": "Bloco", "nucleo": "Núcleo Temático",
@@ -71,8 +71,8 @@ def salvar(nome_saida, sheet_name, df):
 def main():
     df_base = carregar("dados_citacoes.csv", colunas_extra_tema=False)
     df_tema = carregar("dados_citacoes_tema.csv", colunas_extra_tema=True)
-    salvar("citacoes_organizado.xlsx", "Citações", df_base)
-    salvar("citacoes_tema_organizado.xlsx", "Citações + Tema", df_tema)
+    salvar("dados_citacoes.xlsx", "Citações", df_base)
+    salvar("dados_citacoes_tema.xlsx", "Citações + Tema", df_tema)
 
 if __name__ == "__main__":
     main()

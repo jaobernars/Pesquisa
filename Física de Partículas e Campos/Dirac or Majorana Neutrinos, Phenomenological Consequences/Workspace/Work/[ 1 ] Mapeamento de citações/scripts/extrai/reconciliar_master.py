@@ -15,7 +15,7 @@ def key(r):
     return ('ttl:'+t) if t else ('raw:'+norm(r['raw'])[:60])
 
 novo=[]
-for p in ('dados/refs_agostini.csv','dados/refs_gonzalez.csv'):
+for p in ('dados/ref/refs_agostini.csv','dados/ref/refs_gonzalez.csv'):
     for r in csv.DictReader(open(p,encoding='utf-8')):
         r.setdefault('journal',''); r.setdefault('titulo',''); novo.append(r)
 uni={}
@@ -30,7 +30,7 @@ for r in novo:
                     arxiv=r['arxiv'],doi=r['doi'],journal=r['journal'],titulo=r['titulo'],raw=r['raw'])
 print('re-extracao:',len(novo),'brutas ->',len(uni),'unicas')
 
-antigo=list(csv.DictReader(open('dados/master_refs.csv',encoding='utf-8')))
+antigo=list(csv.DictReader(open('dados/master ref/master_refs.csv',encoding='utf-8')))
 por_prefixo={norm(v['raw'])[:70]:k for k,v in uni.items()}
 usados=set(); corrigidos=0
 for a in antigo:
@@ -62,7 +62,7 @@ for i,m in enumerate(faltando):
         fontes=';'.join(sorted(m['fontes'])), ref_ids=';'.join(m['ref_ids']), autor=m['autor'], ano=m['ano'],
         arxiv=m['arxiv'], doi=m['doi'], journal=m['journal'], titulo=m['titulo'], raw=m['raw']))
 cols=['uid','bloco','metodo','fontes','ref_ids','autor','ano','arxiv','doi','journal','titulo','raw']
-with open('dados/master_refs.csv','w',newline='',encoding='utf-8') as f:
+with open('dados/master ref/master_refs.csv','w',newline='',encoding='utf-8') as f:
     w=csv.DictWriter(f,fieldnames=cols);w.writeheader()
     for r in antigo+novos: w.writerow({c:r.get(c,'') for c in cols})
 print('uids preservados:',len(antigo),'| linhas corrigidas (entrada fundida):',corrigidos)

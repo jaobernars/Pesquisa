@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
-"""Gera dados/shortlist_leitura_organizado.xlsx: versao legivel/esquematizada
+"""Gera dados/shortlist/shortlist_leitura.xlsx: versao legivel/esquematizada
 de 'dados/shortlist/shortlist_leitura.csv' (mesmo esquema de colunas de
 dados_citacoes_tema.csv). Nao altera o CSV original.
-Saida fica direto em dados/ (nome curto) para nao ultrapassar o limite
-de 260 caracteres de caminho do Windows/Excel (dentro de dados/shortlist/
-o caminho ficaria com 263 caracteres)."""
+Nome de saida curto ("shortlist_leitura.xlsx", nao "..._organizado.xlsx")
+para nao ultrapassar o limite de 260 caracteres de caminho do Windows/Excel."""
 import pandas as pd
-from organizar_tabelas import formatar_planilha
-from organizar_dados_citacoes import RENOMEIA, ORDEM_BASE, ORDEM_TEMA_EXTRA, WIDTHS, WRAP_COLS
+from export_refs import formatar_planilha
+from export_citacoes import RENOMEIA, ORDEM_BASE, ORDEM_TEMA_EXTRA, WIDTHS, WRAP_COLS
 
 ENTRADA = "dados/shortlist/shortlist_leitura.csv"
-SAIDA = "dados/shortlist_leitura_organizado.xlsx"
+SAIDA = "dados/shortlist/shortlist_leitura.xlsx"
 
 def main():
     df = pd.read_csv(ENTRADA, dtype=str).fillna("")

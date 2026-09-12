@@ -37,7 +37,7 @@ def formatar_planilha(ws, df, wrap_cols=(), widths=None, freeze="A2"):
     ws.row_dimensions[1].height = 30
 
 def montar_agostini():
-    df = pd.read_csv("dados/refs_agostini.csv", dtype=str).fillna("")
+    df = pd.read_csv("dados/ref/refs_agostini.csv", dtype=str).fillna("")
     df = df.rename(columns={
         "ref_id": "ID", "fonte": "Fonte", "autor": "Autor(es)", "ano": "Ano",
         "arxiv": "arXiv", "doi": "DOI", "titulo": "Título",
@@ -46,7 +46,7 @@ def montar_agostini():
     return df[["ID", "Fonte", "Autor(es)", "Ano", "Título", "arXiv", "DOI", "Citação Completa"]]
 
 def montar_gonzalez():
-    df = pd.read_csv("dados/refs_gonzalez.csv", dtype=str).fillna("")
+    df = pd.read_csv("dados/ref/refs_gonzalez.csv", dtype=str).fillna("")
     partes = df["journal"].str.split("|", n=2, expand=True)
     partes = partes.reindex(columns=[0, 1, 2]).fillna("")
     df["Periódico"], df["Volume"], df["Página"] = partes[0], partes[1], partes[2]
@@ -69,13 +69,13 @@ def main():
     df_g = montar_gonzalez()
 
     salvar_arquivo(
-        "dados/refs_agostini_organizado.xlsx", "Agostini", df_a,
+        "dados/ref/refs_agostini.xlsx", "Agostini", df_a,
         wrap_cols={"Título", "Citação Completa"},
         widths={"ID": 10, "Fonte": 12, "Autor(es)": 22, "Ano": 8,
                 "Título": 55, "arXiv": 16, "DOI": 22, "Citação Completa": 70},
     )
     salvar_arquivo(
-        "dados/refs_gonzalez_organizado.xlsx", "Gonzalez-Garcia", df_g,
+        "dados/ref/refs_gonzalez.xlsx", "Gonzalez-Garcia", df_g,
         wrap_cols={"Título", "Citação Completa"},
         widths={"ID": 10, "Fonte": 18, "Autor(es)": 24, "Ano": 8,
                 "Título": 40, "Periódico": 20, "Volume": 10, "Página": 10,
