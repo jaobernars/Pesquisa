@@ -1,0 +1,16 @@
+# Arquivos temporários/trava do Microsoft Office
+~$*.xlsx
+~$*.xls
+~$*.docx
+~$*.doc
+~$*.pptx
+~$*.ppt
+
+# Arquivos de sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Cache Python
+__pycache__/
+*.pyc
