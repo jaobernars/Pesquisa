@@ -14,8 +14,8 @@ BORDER = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
 WRAP = Alignment(vertical="top", wrap_text=True)
 TOP = Alignment(vertical="top")
 
-def formatar_planilha(ws, df, wrap_cols=(), widths=None):
-    ws.freeze_panes = "A2"
+def formatar_planilha(ws, df, wrap_cols=(), widths=None, freeze="A2"):
+    ws.freeze_panes = freeze
     ws.auto_filter.ref = ws.dimensions
     for col_idx, col_name in enumerate(df.columns, start=1):
         cell = ws.cell(row=1, column=col_idx)
