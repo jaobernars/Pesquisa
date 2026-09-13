@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Monta o notebook Mapeamento_Citacoes.ipynb (analise final do mapeamento)."""
+"""Monta o notebook Mapeamento_Citacoes.ipynb (analise final do mapeamento).
+Parte 1 de 2: rode a partir da pasta "[ 1 ] Mapeamento de citações", depois
+rode build_notebook2.py (que le a saida deste script e escreve o notebook final)."""
 import nbformat as nbf
 
 nb = nbf.v4.new_notebook()
@@ -127,11 +129,12 @@ disso.
 # ----------------------------------------------------------------- fig 1
 md(r"""
 ---
-## Figura 1 — Idade × impacto de citação
+## Figura 1 — Ano × impacto de citação
 
-A pergunta do orientador — *quais são os artigos mais novos e suas citações, e os mais velhos e
-suas citações* — é literalmente este gráfico. Cada ponto é uma referência: a posição horizontal é
-quando o trabalho apareceu, a vertical é quantas vezes foi citado desde então.
+**Tarefa**: quais são os artigos mais novos e suas citações, e os mais velhos e suas citações?
+
+**Objetivo**: verificar se a idade de um trabalho influencia o número de citações recebidas, e
+identificar os mais citados entre os extremos, os mais recentes e os mais antigos dos dados.
 """)
 
 code(r"""
@@ -167,36 +170,46 @@ plt.show()
 """)
 
 md(r"""
-**O que este gráfico mostra.**
+**Descrição do gráfico:**
+
+Cada ponto é uma referência dos dados. O eixo horizontal é o ano em que o trabalho apareceu
+(`earliest_date` do INSPIRE-HEP, ou seja, a data do preprint); o eixo vertical é o número de
+citações acumuladas até hoje, em **escala logarítmica**, necessária porque os valores vão de
+poucas unidades a mais de 23 mil. Marcador e cor identificam qual review cita o trabalho: círculo
+azul para a review do Agostini (0νββ), triângulo laranja para a do Gonzalez-Garcia (oscilações),
+quadrado verde para os que aparecem nas duas. Os seis pontos mais citados são rotulados com o
+primeiro autor e o ano.
+
+**Peculiaridades do gráfico:**
 
 Não existe correlação simples entre idade e citação. Se houvesse, os pontos formariam uma faixa
-descendente da esquerda para a direita — trabalhos velhos com muitas citações, novos com poucas. O
+descendente da esquerda para a direita, trabalhos velhos com muitas citações, novos com poucas. O
 que se vê é uma nuvem espalhada em três ordens de magnitude em qualquer fatia de tempo depois de
-1960: em 1980 há trabalhos com 4.000 citações e trabalhos com 20.
+1960; em 1980 há trabalhos com 4.000 citações e trabalhos com 20.
 
-A leitura correta é outra: o eixo vertical separa **o que virou infraestrutura conceitual da área**
+O eixo vertical separa os que viraram infraestrutura conceitual da área
 do resto. Os pontos no alto, entre 4.000 e 13.000 citações, são quase todos anteriores a 1990 e são
-os artigos que fundaram os formalismos — Kobayashi–Maskawa, Cabibbo, Mohapatra–Senjanović,
-Wolfenstein, Minkowski, Maki–Nakagawa–Sakata. Nenhum deles é sobre decaimento duplo beta; são sobre
+os artigos que fundaram os formalismos (Kobayashi–Maskawa, Cabibbo, Mohapatra–Senjanović,
+Wolfenstein, Minkowski, Maki–Nakagawa–Sakata). Nenhum deles é sobre decaimento duplo beta; são sobre
 mistura de sabores, massa e violação de simetrias, ou seja, exatamente a camada teórica de que o
 0νββ depende.
 
-O ponto isolado no topo à direita é o **Planck 2018**, com 23.108 citações — 2,5 vezes o segundo
-colocado. Não é física de neutrinos: é o vínculo cosmológico sobre Σmν que as duas reviews usam
-como entrada externa. Vale decidir com o orientador se ele entra na análise final ou é tratado à
-parte, porque sozinho ele comprime visualmente todo o resto.
+Um ponto se isola no topo à direita: é o Planck 2018, com 23.108 citações, 2,5 vezes o segundo
+colocado. Não é um trabalho de física de neutrinos; é o vínculo cosmológico que as duas reviews
+usam como entrada externa.
 
-A densidade da nuvem cresce muito depois de 2005, e isso é uma propriedade da **bibliografia**, não
-da física: reviews citam preferencialmente literatura recente. A Figura 2 mostra isso de frente.
+A densidade da nuvem também cresce visivelmente depois de 2005, uma propriedade da bibliografia: reviews citam preferencialmente literatura recente.
 """)
 
 # ----------------------------------------------------------------- fig 2
 md(r"""
 ---
-## Figura 2 — Perfil temporal do corpus
+## Figura 2 — Perfil temporal dos dados
 
-Quantas referências cada ano fornece às duas reviews. É o gráfico que descreve o *viés de recência*
-da bibliografia.
+**Tarefa**: quantas referências cada ano fornece às duas reviews?
+
+**Objetivo**: medir o viés de recência da bibliografia; verificar se as reviews citam
+predominantemente literatura recente ou se a distribuição é mais uniforme ao longo do tempo.
 """)
 
 code(r"""
@@ -206,27 +219,32 @@ fig, ax = plt.subplots(figsize=(11, 4.2))
 ax.set_axisbelow(True); ax.grid(True, axis='y', alpha=.9)
 ax.bar(anos, [c[a] for a in anos], color=AZUL, width=.85, linewidth=0)
 ax.set_xlabel('Ano'); ax.set_ylabel('Nº de referências citadas')
-ax.set_title('Perfil temporal do corpus: quantas referências cada ano fornece', loc='left', color=TINTA)
+ax.set_title('Perfil temporal dos dados: quantas referências cada ano fornece', loc='left', color=TINTA)
 ax.xaxis.set_major_locator(MultipleLocator(10))
 plt.show()
 
 dec = collections.Counter(r['ano'] // 10 * 10 for r in D)
-display(Markdown('| Década | Referências | % do corpus |\n|---|---|---|\n' + '\n'.join(
+display(Markdown('| Década | Referências | % dos dados |\n|---|---|---|\n' + '\n'.join(
     f'| {d}s | {dec[d]} | {100*dec[d]/len(D):.1f}% |' for d in sorted(dec))))
 """)
 
 md(r"""
-**O que este gráfico mostra.**
+**Descrição do gráfico:**
 
-Quase metade do corpus é dos anos 2010 em diante. As décadas de 1930 a 1960 — que contêm Majorana,
-Fermi, Racah, Furry, Pauli, Pontecorvo, Lee e Yang — somam pouco mais de 6% das referências.
+Gráfico de barras: o eixo horizontal é o ano em que os trabalhos apareceram, o eixo vertical é
+quantas referências têm aquele ano. Cada barra soma as referências cujo `earliest_date` cai
+naquele ano. Abaixo do gráfico, a tabela agrupa os mesmos dados por década, com a contagem
+absoluta e o percentual sobre o total de referências.
 
-Isso tem uma consequência prática para a sua IC. As duas reviews são mapas do **estado atual** do
-campo, e por isso citam sobretudo resultados experimentais recentes e cálculos de estrutura
-nuclear. A camada de formalismo — férmions de Majorana, matriz PMNS estendida com fases de CP,
-massa efetiva de Majorana — aparece nelas por referência a meia dúzia de artigos fundadores, não
-por uma literatura extensa. Se a sua bibliografia teórica se limitar ao que estas duas reviews
-citam, ela vai herdar esse desequilíbrio.
+**Peculiaridades do gráfico:**
+
+Quase metade dos dados é dos anos 2010 em diante. As décadas de 1930 a 1960, que contêm Majorana,
+Fermi, Racah, Furry, Pauli, Pontecorvo, Lee e Yang, somam pouco mais de 6% das referências.
+
+As duas reviews são mapas do **estado atual** do campo, e por isso citam sobretudo resultados
+experimentais recentes e cálculos de estrutura nuclear. A camada de formalismo, férmions de
+Majorana, matriz PMNS estendida com fases de CP, massa efetiva de Majorana, aparece nelas por
+referência a meia dúzia de artigos fundadores.
 """)
 
 # ----------------------------------------------------------------- fig 3
@@ -266,9 +284,18 @@ display(Markdown('| Década | n | Mediana | 3º quartil | Máximo |\n|---|---|--
 """)
 
 md(r"""
-**O que este gráfico mostra.**
+**Descrição do gráfico:**
 
-As medianas desenham uma curva com pico nos anos 1970 — 1.690 citações — e caem monotonicamente
+Gráfico de caixas (boxplot), uma caixa por década: o eixo horizontal é a década, o vertical é o
+número de citações, em escala logarítmica. A caixa vai do primeiro ao terceiro quartil, a linha
+laranja marca a mediana, os bigodes se estendem até 1,5 vez a amplitude interquartil, e outliers
+além desse intervalo não são desenhados. O rótulo *n* abaixo de cada caixa é o número de
+referências daquela década. A tabela logo abaixo do gráfico traz os mesmos números por década:
+*n*, mediana, terceiro quartil e máximo.
+
+**Peculiaridades do gráfico:**
+
+As medianas desenham uma curva com pico nos anos 1970, 1.690 citações, e caem monotonicamente
 depois: 342 nos anos 1980, 151 nos 1990, 98 nos 2010, 53 nos 2020. Parte dessa queda é trivial: um
 artigo de 2020 teve cinco anos para acumular citações, um de 1970 teve cinquenta e cinco. É por
 isso que a Figura 4 existe.
@@ -278,12 +305,12 @@ entre terceiro e primeiro quartil vai de **1,6×** nos anos 1930 a **20,6×** no
 nos 1970, e depois se estabiliza em torno de **5×** de 1980 em diante.
 
 A caixa curta dos anos 1930 com *n* = 12 diz que uma review só volta tão atrás para buscar o que
-virou fundamento: tudo que ela cita daquela década é canônico, então a dispersão é pequena. As
-caixas altíssimas dos anos 1960 e 1970 são o oposto — ali convivem, na mesma bibliografia, o
+artigos que viram fundamento, tudo que ela cita daquela década é canônico, então a dispersão é pequena. As
+caixas altíssimas dos anos 1960 e 1970 são o oposto, ali convivem, na mesma bibliografia, o
 Kobayashi–Maskawa com 12.896 citações e trabalhos de instrumentação da época com poucas dezenas. É
 a década em que o campo estava se formando e a review precisa citar as duas coisas.
 
-De 1980 em diante a dispersão se estabiliza e o *n* explode: 409 referências só dos anos 2010. A
+De 1980 em diante a dispersão se estabiliza e o *n* explode, 409 referências só dos anos 2010. A
 partir daí a bibliografia deixa de ser seletiva e passa a ser um retrato da literatura corrente.
 """)
 
@@ -322,18 +349,26 @@ for r in sorted(D, key=lambda z: -z['taxa'])[:10]:
 """)
 
 md(r"""
-**O que este gráfico mostra.**
+**Descrição do gráfico:**
 
-Compare dois casos concretos do corpus. O Super-Kamiokande de 1998 tem 9.245 citações acumuladas em
+Gráfico de dispersão: o eixo horizontal é o ano em que o trabalho apareceu, o vertical é a taxa
+de citação, citações acumuladas dividido pelos anos desde a publicação, em escala logarítmica.
+Cada ponto é uma referência; marcador e cor identificam a review de origem, os mesmos da Figura 1.
+Os seis pontos com maior taxa são rotulados com autor e ano, e a lista impressa abaixo do gráfico
+traz as dez maiores taxas com o número de citações e a idade do trabalho.
+
+**Peculiaridades do gráfico:**
+
+O Super-Kamiokande de 1998 tem 9.245 citações acumuladas em
 28 anos, cerca de 330 por ano. O Planck 2018 tem 23.108 em 8 anos, cerca de 2.900 por ano. Em
 citações absolutas o Planck lidera por um fator 2,5; em taxa, por um fator 9. São dois regimes
-diferentes de influência, e o gráfico de citações absolutas esconde a diferença.
+diferentes de influência.
 
 O padrão geral é uma nuvem aproximadamente horizontal, com a borda superior subindo devagar em
-direção ao presente. Isso reflete o crescimento do volume de publicação em física de partículas:
+direção ao presente. Isso reflete o crescimento do volume de publicação em física de partículas,
 um artigo de hoje é citado por uma comunidade maior do que a de 1970, então taxas altas são mais
 fáceis de alcançar agora. Para comparar trabalhos de épocas distintas, **nenhuma das duas métricas
-basta sozinha** — as duas juntas é que dizem algo.
+basta sozinha**.
 """)
 
 # ----------------------------------------------------------------- fig 5
@@ -360,7 +395,7 @@ for i, r in enumerate(top30):
     ax.annotate(f"{r['cit']:,}".replace(',', '.'), (r['cit'], i), xytext=(4, 0),
                 textcoords='offset points', va='center', fontsize=7.5, color=TINTA2)
 ax.set_xlabel('Citações'); ax.margins(x=.12)
-ax.set_title('As 30 referências mais citadas do corpus', loc='left', color=TINTA)
+ax.set_title('As 30 referências mais citadas dos dados', loc='left', color=TINTA)
 presentes = [k for k in ESTILO if any(r['fontes'] == k for r in top30)]
 ax.legend(handles=[Line2D([], [], marker='s', linestyle='none', markersize=7,
                           color=ESTILO[k]['cor'], label=ESTILO[k]['rotulo']) for k in presentes],
@@ -369,17 +404,24 @@ plt.show()
 """)
 
 md(r"""
-**O que este gráfico mostra.**
+**Descrição do gráfico:**
 
-Contando por review: das 30 mais citadas, a maioria vem da bibliografia do Agostini (0νββ), mas os
+Gráfico de barras horizontais com as 30 referências mais citadas, ordenadas de baixo para cima
+da 30ª colocada até a mais citada. O eixo horizontal é o número de citações, anotado ao final de
+cada barra; cada linha traz o primeiro autor, o ano e um resumo do título. A cor da barra indica
+a review de origem, o mesmo esquema de cores das Figuras 1 e 4, identificado na legenda.
+
+**Peculiaridades do gráfico:**
+
+Contando por review, das 30 mais citadas, a maioria vem da bibliografia do Agostini (0νββ), mas os
 trabalhos de **oscilação** dominam o topo. Só três das trinta tratam diretamente de decaimento
 duplo beta sem neutrinos. As outras vinte e sete são sobre mistura de sabores, mecanismos de massa,
 violação de CP, anomalias e assimetria bariônica.
 
-Isso não diminui o 0νββ — mostra que ele é um campo **jovem e experimental**, cujas bases
+Isso mostra que 0νββ é um campo **jovem e experimental**, cujas bases
 conceituais foram estabelecidas por uma literatura mais antiga e mais citada. Os artigos verdes,
 citados pelas duas reviews, são precisamente a ponte entre os dois mundos.
 """)
 nb['cells'] = C
-nbf.write(nb, '/tmp/nb_parte1.ipynb')
+nbf.write(nb, '_nb_parte1.ipynb')
 print('parte 1:', len(C), 'celulas')

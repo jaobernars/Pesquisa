@@ -4,10 +4,10 @@ Graficos tempo x citacoes do mapeamento de referencias das duas reviews
 (Agostini et al., RMP "Toward the discovery of matter creation with 0nubb decay"
  e Gonzalez-Garcia et al., PDG "14. Neutrino Masses, Mixing, and Oscillations").
 
-Entrada : dados/citacoes/dados_citacoes.csv   (gerado por scripts/consolidacao_tema/consolidar.py)
-Saida   : graficos/*.png  e  graficos/*.pdf  (300 dpi, prontos para relatorio)
+Entrada : dados/citacoes/dados_citacoes.csv   (gerado por scripts/tema/consolidar.py)
+Saida   : gráficos/*.png  e  gráficos/*.pdf  (300 dpi, prontos para relatorio)
 
-Uso: python3 scripts/relatorios/grafico_citacoes.py [--min-cit 0] [--sem-auto]
+Uso: python3 scripts/saida/grafico_citacoes.py [--min-cit 0] [--sem-auto]
 """
 import csv, argparse, os, statistics, collections
 import matplotlib
@@ -40,17 +40,17 @@ COBERTURA = ''   # preenchido em main(): avisa que a amostra e parcial
 def subtitulo(ax):
     pass  # a nota de cobertura vai no rodape, montado em salvar()
 
-def salvar(fig, nome):
+def salvar(fig, nome, nota=None):
     import textwrap
-    nota = 'Fonte: INSPIRE-HEP.'
-    if COBERTURA: nota += ' ' + COBERTURA
+    if nota is None:
+        nota = 'Fonte: INSPIRE-HEP.' + (' ' + COBERTURA if COBERTURA else '')
     fig.text(0.005, -0.02, '\n'.join(textwrap.wrap(nota, 130)),
              fontsize=8, color=TINTA2, va='top')
-    os.makedirs('graficos', exist_ok=True)
+    os.makedirs('gráficos', exist_ok=True)
     for ext in ('png', 'pdf'):
-        fig.savefig(f'graficos/{nome}.{ext}')
+        fig.savefig(f'gráficos/{nome}.{ext}')
     plt.close(fig)
-    print('  ->', f'graficos/{nome}.png/.pdf')
+    print('  ->', f'gráficos/{nome}.png/.pdf')
 
 def carregar(caminho, campo_cit):
     linhas = []
@@ -209,6 +209,38 @@ def fig_top(d, n=30):
     subtitulo(ax)
     salvar(fig, '05_top30_mais_citados')
 
+# --- 6. referencias ligadas ao objetivo da IC ---------------------------------
+def fig_ic(caminho='dados/ic/referencias_ic.csv'):
+    if not os.path.exists(caminho):
+        print('  (sem', caminho, '- rode scripts/tema/refs_ic.py para gerar a Figura 6)')
+        return
+    d = [dict(r, _ano=int(r['ano']), _cit=int(r['citacoes']))
+         for r in csv.DictReader(open(caminho, encoding='utf-8')) if r['citacoes'].isdigit()]
+    estilo = {'Formalismo': dict(cor=AZUL, marcador='o', rotulo='Formalismo'),
+              'Direta': dict(cor=LARANJA, marcador='^', rotulo='Diretamente correlacionada')}
+    fig, ax = plt.subplots(figsize=(10, 6))
+    ax.set_axisbelow(True); ax.grid(True, axis='both', alpha=0.9)
+    for tipo, est in estilo.items():
+        g = [r for r in d if r['tipo'] == tipo]
+        ax.scatter([r['_ano'] for r in g], [r['_cit'] for r in g], s=30, c=est['cor'], marker=est['marcador'],
+                   alpha=0.75, linewidths=0.6, edgecolors='white', label=f"{est['rotulo']} (n={len(g)})", zorder=3)
+    ax.set_yscale('log')
+    ax.set_xlabel('Ano do trabalho (earliest_date, INSPIRE-HEP)')
+    ax.set_ylabel('Citações (escala log)')
+    ax.set_title('Referências ligadas ao objetivo da IC: ano × impacto de citação', loc='left', color=TINTA)
+    ax.xaxis.set_major_locator(MultipleLocator(10))
+    ax.yaxis.set_major_formatter(ScalarFormatter())
+    # posicoes fixas por ordem de citacao: a alternancia automatica faz Mohapatra cruzar Kobayashi
+    posicoes = [(-10, 0, 'right'), (-8, 10, 'right'), (-8, 12, 'right'), (-8, 4, 'right'), (10, 12, 'left'), (-6, 16, 'right')]
+    for r, (dx, dy, ha) in zip(sorted(d, key=lambda r: -r['_cit']), posicoes):
+        ax.annotate(f"{r['primeiro_autor']} {r['_ano']}", (r['_ano'], r['_cit']), textcoords='offset points',
+                    xytext=(dx, dy), ha=ha, va='center', fontsize=7.5, color=TINTA2, zorder=5,
+                    arrowprops=dict(arrowstyle='-', lw=0.6, color='#B8B8B8', shrinkA=0, shrinkB=3))
+    ax.legend(loc='upper left', fontsize=8.5)
+    salvar(fig, '06_refs_ic', nota=f'Fonte: INSPIRE-HEP. {len(d)} referências das duas reviews selecionadas por '
+                                   f'relação com o objetivo da IC (dados/ic/referencias_ic.csv); as sem registro no '
+                                   f'INSPIRE ficam de fora.')
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--csv', default='dados/citacoes/dados_citacoes.csv')
@@ -218,7 +250,7 @@ def main():
     campo = 'citacoes_sem_auto' if a.sem_auto else 'citacoes'
     d = [r for r in carregar(a.csv, campo) if r['_cit'] >= a.min_cit]
     if not d:
-        raise SystemExit('Sem dados: rode scripts/consolidacao_tema/consolidar.py depois de concluir os blocos.')
+        raise SystemExit('Sem dados: rode scripts/tema/consolidar.py depois de concluir os blocos.')
     global COBERTURA
     todas = list(csv.DictReader(open(a.csv, encoding='utf-8')))
     total = len(todas)
@@ -238,7 +270,7 @@ def main():
     cits = [r['_cit'] for r in d]
     print(f'{len(d)} referências | mediana {statistics.median(cits):.0f} | '
           f'média {statistics.mean(cits):.0f} | máx {max(cits)}')
-    fig_dispersao(d, campo); fig_volume(d); fig_decadas(d); fig_taxa(d); fig_top(d)
+    fig_dispersao(d, campo); fig_volume(d); fig_decadas(d); fig_taxa(d); fig_top(d); fig_ic()
 
 if __name__ == '__main__':
     main()

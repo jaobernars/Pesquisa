@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import re,csv,json,unicodedata
 ARCH=['astro-ph','hep-ph','hep-ex','hep-th','nucl-ex','nucl-th','physics','math-ph','quant-ph','cond-mat','gr-qc','hep-lat','stat','cs','math','eess','q-bio']
-SRC='/home/claude/proj/dados/agostini_cols.txt'
+SRC='dados/ref/_agostini_cols.txt'
 raw=open(SRC,encoding='utf-8').read().split('\n')
 i=[n for n,l in enumerate(raw) if l.strip()=='REFERENCES'][0]
 body=raw[i+1:]
@@ -54,7 +54,7 @@ rows=[]
 for n,e in enumerate(ents,1):
     t=join(e)
     rows.append(dict(ref_id='A%03d'%n,fonte='AGOSTINI',autor=au(t),ano=yr(t),arxiv=arx(t),doi=doi(t),titulo=ttl(t),raw=t))
-with open('/home/claude/proj/dados/refs_agostini.csv','w',newline='',encoding='utf-8') as f:
+with open('dados/ref/refs_agostini.csv','w',newline='',encoding='utf-8') as f:
     w=csv.DictWriter(f,fieldnames=['ref_id','fonte','autor','ano','arxiv','doi','titulo','raw']);w.writeheader()
     for r in rows: w.writerow(r)
 def norm(s): return unicodedata.normalize('NFKD',s).encode('ascii','ignore').decode().lower()

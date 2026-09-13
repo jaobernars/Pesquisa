@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Parte 2 do notebook: tabelas ABNT, ano a ano, historicos e Nobel."""
+"""Parte 2 do notebook: tabelas ABNT, ano a ano, historicos e Nobel.
+Rode a partir da pasta "[ 1 ] Mapeamento de citações", depois de build_notebook.py."""
 import nbformat as nbf
 
-nb = nbf.read('/tmp/nb_parte1.ipynb', as_version=4)
+nb = nbf.read('_nb_parte1.ipynb', as_version=4)
 C = list(nb['cells'])
 def md(t): C.append(nbf.v4.new_markdown_cell(t.strip('\n')))
 def code(t): C.append(nbf.v4.new_code_cell(t.strip('\n')))
@@ -294,7 +295,7 @@ De 996 entradas bibliográficas brutas nas duas reviews saíram **970 referênci
 **888 têm contagem de citação verificada** no INSPIRE-HEP. A cobertura de 91,5% é o teto realista:
 as 62 ausências são categorias que a base não indexa.
 
-A análise por eixo temático (`scripts/classificar_tema.py`) põe **260 referências** no núcleo do
+A análise por eixo temático (`scripts/tema/classificar_tema.py`) põe **260 referências** no núcleo do
 projeto de IC — natureza de Majorana, 0νββ, violação de número leptônico, PMNS com fases de CP ou
 *seesaw*. A distribuição interna desse núcleo é informativa: 215 referências sobre 0νββ, 91 sobre
 elementos de matriz nuclear, mas apenas **21 sobre a natureza de Majorana** e **8 sobre PMNS e
@@ -316,7 +317,7 @@ data. Qualquer análise da primeira metade do século XX a partir destes dados e
 construção.
 
 **Autocitação não foi descontada nas tabelas.** A coluna `citacoes_sem_auto` existe em
-`dados/dados_citacoes.csv` e o script de gráficos aceita `--sem-auto`. Para colaborações grandes a
+`dados/citacoes/dados_citacoes.csv` e o script de gráficos aceita `--sem-auto`. Para colaborações grandes a
 diferença chega a 40% (o IceCube-Gen2, por exemplo, cai de 852 para 514).
 
 **Os números são um retrato datado.** A coleta correu entre 6 e 12 de setembro de 2026. A deriva
@@ -336,15 +337,21 @@ Mapeamento_Citacoes/
 ├── Mapeamento_Citacoes.ipynb          este documento
 ├── PROTOCOLO_BUSCA.md                 regras de consulta ao INSPIRE e armadilhas documentadas
 ├── dados/
-│   ├── master_refs.csv                970 referências únicas extraídas dos PDFs
-│   ├── dados_citacoes.csv             TABELA FINAL — 970 linhas com citações e metadados
-│   ├── dados_citacoes_tema.csv        idem + classificação por eixo temático
-│   ├── shortlist_leitura.csv          os mais citados dentro do núcleo temático
+│   ├── ref/                           refs_agostini.csv, refs_gonzalez.csv — extração bruta dos PDFs
+│   ├── master ref/master_refs.csv     970 referências únicas, mescladas e deduplicadas
+│   ├── citacoes/
+│   │   ├── dados_citacoes.csv         TABELA FINAL — 970 linhas com citações e metadados
+│   │   └── dados_citacoes_tema.csv    idem + classificação por eixo temático
+│   ├── shortlist/shortlist_leitura.csv  os mais citados dentro do núcleo temático
 │   └── tabela_mais_citado_por_ano.md  Tabela 2 em markdown, gerada por este notebook
 ├── resultados/B01.csv … B51.csv       coleta bruta, um arquivo por bloco de 20 buscas
-├── planilhas/Mapeamento_B31-B40.xlsx  recorte em Excel com resumo por fórmulas
-├── graficos/                          as 5 figuras em PNG e PDF, 300 dpi
-└── scripts/                           parsing, consolidação, validação, gráficos, temas
+├── gráficos/                          as 5 figuras em PNG e PDF, 300 dpi (geradas por scripts/saida/grafico_citacoes.py)
+├── tarefas/indice_blocos.json         índice dos 51 blocos de busca no INSPIRE
+└── scripts/
+    ├── extrai/                        parsing dos PDFs, deduplicação, montagem do master
+    ├── inspire/                       geração e validação dos blocos de busca
+    ├── tema/                          classificação por eixo temático, consolidação
+    └── saida/                         export para Excel, montagem do notebook, gráficos
 ```
 
 ---
@@ -365,5 +372,5 @@ Justificativas oficiais dos prêmios: [NobelPrize.org](https://www.nobelprize.or
 nb['cells'] = C
 nb['metadata'] = {'kernelspec': {'display_name': 'Python 3', 'language': 'python', 'name': 'python3'},
                   'language_info': {'name': 'python'}}
-nbf.write(nb, '/home/claude/proj/Mapeamento_Citacoes.ipynb')
+nbf.write(nb, 'Mapeamento_Citacoes.ipynb')
 print('notebook montado:', len(C), 'celulas')

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Valida resultados/<BLOCO>.csv contra a lista mestre. Uso: python3 scripts/coleta_inspire/validar_bloco.py B01"""
+"""Valida resultados/<BLOCO>.csv contra a lista mestre. Uso: python3 scripts/inspire/validar_bloco.py B01"""
 import csv,sys,os,json,datetime
 b=sys.argv[1].upper()
 SCHEMA=open('resultados/_schema.csv',encoding='utf-8').read().strip().split(',')
@@ -27,7 +27,7 @@ if dup:
     # Duplicata de inspire_id eh esperada quando o mesmo paper classico e citado
     # independentemente pelas duas reviews-fonte (AGOSTINI e GONZALEZ-GARCIA) — a
     # dedup entre reviews so acontece na Fase 3 (CONSOLIDAR), usando a coluna
-    # `fontes` de dados/master ref/master_refs.csv (ver claude/plano-mapeamento-citacoes.md).
+    # `fontes` de dados/master ref/master_refs.csv.
     # So reportar como erro se as fontes das linhas duplicadas coincidirem, o que
     # indicaria um match de query realmente errado.
     fontes_por_uid={}
@@ -45,7 +45,7 @@ if dup:
 benignas=sorted(dup-set(real_dup)) if dup else []
 if benignas:
     print(f'  AVISO: mesmo inspire_id em uids diferentes deste bloco (mesma obra citada pelas duas reviews): {benignas}')
-    print('         nao e erro; a deduplicacao definitiva acontece em scripts/consolidacao_tema/consolidar.py, por inspire_id.')
+    print('         nao e erro; a deduplicacao definitiva acontece em scripts/tema/consolidar.py, por inspire_id.')
 c=lambda s:sum(1 for r in rows if r['status']==s)
 if err:
     print(f'BLOCO {b}: REPROVADO'); [print('  -',e) for e in err]; sys.exit(1)

@@ -1,7 +1,12 @@
 # -*- coding: utf-8 -*-
+# Rode a partir da pasta "[ 1 ] Mapeamento de citações" (caminhos relativos).
+# ATENCAO: nao ha script de extracao para o Gonzalez neste repo (diferente do
+# Agostini, que tem extract_agostini.sh); SRC precisa ser gerado manualmente
+# com pdftotext a partir de "Citações das Referências/[2] Gonzalez-Garcia, Referências.pdf"
+# antes de rodar este script.
 import re,csv
 ARCH=['astro-ph','hep-ph','hep-ex','hep-th','nucl-ex','nucl-th','physics','math-ph','quant-ph','cond-mat','gr-qc','hep-lat']
-SRC='/tmp/claude-0/-home-claude/9e61252c-ae46-59f8-a689-7a8d08e03155/scratchpad/gonzalez.txt'
+SRC='dados/ref/_gonzalez_cols.txt'
 raw=open(SRC,encoding='utf-8').read().split('\n')
 try: s=[n for n,l in enumerate(raw) if l.strip()=='References'][0]
 except IndexError: s=0
@@ -42,7 +47,7 @@ rows=[]
 for n in sorted(ents):
     t=join(ents[n])
     rows.append(dict(ref_id='G%03d'%n,fonte='GONZALEZ-GARCIA',autor=t.split(',')[0][:60],ano=yr(t),arxiv=arx(t),doi=doi(t),journal=jr(t),titulo='',raw=t))
-with open('/home/claude/proj/data/refs_gonzalez.csv','w',newline='',encoding='utf-8') as f:
+with open('dados/ref/refs_gonzalez.csv','w',newline='',encoding='utf-8') as f:
     w=csv.DictWriter(f,fieldnames=['ref_id','fonte','autor','ano','arxiv','doi','journal','titulo','raw']);w.writeheader()
     for r in rows: w.writerow(r)
 print('GONZALEZ entradas:',len(rows),'(esperado 252) | faltando:',[i for i in range(1,253) if i not in ents])

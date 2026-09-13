@@ -1,0 +1,158 @@
+uid,eixo_num,eixo,tipo,fontes,ano,citacoes,primeiro_autor,n_autores,journal,titulo
+U0465,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,1928,1783,Dirac,1,"Proc. Roy. Soc. Lond. A 117, 610-624",The quantum theory of the electron
+U0482,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,1937,1720,Majorana,1,"Nuovo Cim. 14, 171-184",Teoria simmetrica dell'elettrone e del positrone
+U0483,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,1937,305,Racah,1,"Nuovo Cim. 14, 322-328",On the symmetry of particle and antiparticle
+U0485,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,1938,35,Furry,1,"Phys. Rev. 54, 56-67",Note on the Theory of the Neutral Particle
+U0514,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,1955,241,Davis,1,"Phys.Rev. 97, 766","Attempt to detect the antineutrinos from a nuclear reactor by the Cl37(anti-nu,e-) A37 reaction"
+U0520,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,1957,74,Landau,1,"Nucl.Phys. 3, 127",On the conservation laws for weak interactions
+U0521,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,1957,492,Lee,2,"Phys. Rev. 105, 1671",Parity Nonconservation and a Two Component Theory of the Neutrino
+U0524,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,1957,322,Salam,1,"Nuovo Cim. 5, 299",On parity conservation and neutrino mass
+U0519,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,1957,186,Case,1,"Phys.Rev. 107, 307",Reformulation of the Majorana Theory of the Neutrino
+U0525,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,1957,,Radicati,2,"Nuovo Cim. Series 10, 5, 1693",On the equivalence theorem for the massless neutrino
+U0527,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,1958,2053,Feynman,2,"Phys. Rev. 109, 193",Theory of Fermi interaction
+U0528,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,1958,999,Goldhaber,3,"Phys. Rev. 109, 1015",Helicity of Neutrinos
+U0529,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,1958,773,Sudarshan,2,"Phys. Rev. 109, 1860",Chirality invariance and the universal Fermi interaction
+U0587,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,GONZALEZ-GARCIA,1981,433,Schechter,2,"Phys. Rev. D24, 1883",Majorana Neutrinos and Magnetic Fields
+U0628,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,GONZALEZ-GARCIA,1987,45,Kayser,3,"World Sci. Lect. Notes Phys. 25, 1 (1989)",The Physics of Massive Neutrinos
+U0643,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,GONZALEZ-GARCIA,1993,22,Kim,2,"Contemp. Concepts Phys. 8, 1",Neutrinos in physics and astrophysics
+U0667,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,GONZALEZ-GARCIA,1998,153,Mohapatra,2,"World Sci. Lect. Notes Phys. 60, 1",Massive neutrinos in physics and astrophysics. Second edition
+U0699,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,GONZALEZ-GARCIA,2007,469,Giunti,2,ISBN 9780198508717 (Oxford Univ. Press),Fundamentals of Neutrino Physics and Astrophysics
+U0173,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,2013,80,Petcov,1,"Adv.High Energy Phys.,2013,852987",The Nature of Massive Neutrinos
+U0206,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,2014,528,Elliott,2,"Rev.Mod.Phys.,87,137","Colloquium: Majorana Fermions in nuclear, particle and solid-state physics"
+U0956,1,"Natureza do neutrino: Dirac, Majorana e quiralidade",Formalismo,AGOSTINI,2018,,De Bianchi,1,"Stud.Hist.Phil.Sci.B 61, 68-79",Rethinking antiparticles. Hermann Weyl’s contribution to neutrino physics
+U0522,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,AGOSTINI,1957,2150,Pontecorvo,1,"Zh. Eksp. Teor. Fiz. 34, 247",Inverse Beta Processes and Nonconservation of Lepton Charge
+U0523,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,AGOSTINI,1957,2723,Pontecorvo,1,"Sov. Phys. JETP 6, 429",Mesonium and antimesonium
+U0534,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,AGOSTINI,1962,184,Katayama,4,"Prog. Theor. Phys. 28, 675",Possible unified models of elementary particles with two neutrinos
+U0535,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,AGOSTINI,1962,5760,Maki,3,"Prog. Theor. Phys. 28, 870",Remarks on the unified model of elementary particles
+U0538,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,AGOSTINI,1963,8352,Cabibbo,1,"Phys. Rev. Lett. 10, 531",Unitary Symmetry and Leptonic Decays
+U0544,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,GONZALEZ-GARCIA,1967,2876,Pontecorvo,1,"Zh.Eksp.Teor.Fiz. 53, 1717",Neutrino Experiments and the Problem of Conservation of Leptonic Charge
+U0553,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,AGOSTINI,1969,1365,Gribov,2,"Phys.Lett.B 28, 493",Neutrino astronomy and lepton charge
+U0560,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,GONZALEZ-GARCIA,1973,12896,Kobayashi,2,"Prog.Theor.Phys. 49, 652",CP Violation in the Renormalizable Theory of Weak Interaction
+U0571,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,GONZALEZ-GARCIA,1977,343,Cabibbo,1,"Phys. Lett. 72B, 333",Time Reversal Violation in Neutrino Oscillation
+U0578,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,GONZALEZ-GARCIA,1979,109,Schechter,2,"Phys. Rev. D21, 309",Comment on the Lepton Mixing Matrix
+U0577,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,AGOSTINI,1980,759,Bilenky,3,"Phys.Lett.B 94, 495",On Oscillations of Neutrinos with Dirac and Majorana Masses
+U0585,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,GONZALEZ-GARCIA,1980,203,Barger,3,"Phys. Rev. Lett. 45, 2084",CP Nonconservation in Three-Neutrino Oscillations
+U0599,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,GONZALEZ-GARCIA,1985,2328,Jarlskog,1,"Phys. Rev. Lett. 55, 1039",Commutator of the Quark Mass Matrices in the Standard Electroweak Model and a Measure of Maximal CP Violation
+U0053,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,GONZALEZ-GARCIA,2002,118,Farzan,2,"Phys. Rev. D65, 113001",Leptonic unitarity triangle and CP violation
+U0059,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,GONZALEZ-GARCIA,2002,599,Gonzalez-Garcia,2,"Rev. Mod. Phys. 75, 345",Neutrino Masses and Mixing: Evidence and Implications
+U0085,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,GONZALEZ-GARCIA,2006,530,Antusch,5,"JHEP,0610,084",Unitarity of the Leptonic Mixing Matrix
+U0099,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,GONZALEZ-GARCIA,2007,1028,Gonzalez-Garcia,2,"Phys.Rept.,460,1",Phenomenology with Massive Neutrinos
+U0107,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,GONZALEZ-GARCIA,2010,23,Dueck,3,"Phys.Rev.D,82,013005",On Leptonic Unitary Triangles and Boomerangs
+U0191,2,"Mistura leptônica, matriz PMNS e fases de CP",Formalismo,GONZALEZ-GARCIA,2014,317,Antusch,2,"JHEP,10,094",Non-unitarity of the leptonic mixing matrix: present bounds and future sensitivities
+U0511,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,AGOSTINI,1953,,Marx,1,"Acta Phys.Acad.Sci.Hung. 3, 55-58 (bruto)",Die wechselwirkung der elementar-teilchen und die erhaltungssätze
+U0645,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,AGOSTINI,1993,,Zeldovich,3,"Selected Works of Yakov Borisovich Zeldovich, Vol. II (Princeton University Press), pp. 56-61",On the theory of elementary particles.: Conservation of the nuclear charge and a possible new type of v-particles
+U0567,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,AGOSTINI,1977,5951,Minkowski,1,"Phys.Lett.B 67, 421",μ→eγ at a rate of one out of 10^9 muon decays?
+U0001,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,AGOSTINI;GONZALEZ-GARCIA,1979,4406,Gell-Mann,3,,Complex Spinors and Unified Theories
+U0573,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,GONZALEZ-GARCIA,1979,2623,Yanagida,1,"Conf. Proc. C 7902131, 95",Horizontal gauge symmetry and masses of neutrinos
+U0574,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,AGOSTINI,1979,2869,Weinberg,1,"Phys.Rev.Lett. 43, 1566",Baryon and Lepton Nonconserving Processes
+U0580,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,AGOSTINI,1979,7464,Mohapatra,2,"Phys.Rev.Lett. 44, 912",Neutrino Mass and Spontaneous Parity Nonconservation
+U0579,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,GONZALEZ-GARCIA,1980,4227,Schechter,2,"Phys. Rev. D22, 2227",Neutrino Masses in SU(2) x U(1) Theories
+U0586,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,AGOSTINI,1980,432,Weinberg,1,"Phys. Rev. D 22, 1694",Varieties of Baryon and Lepton Nonconservation
+U0003,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,GONZALEZ-GARCIA,1991,465,Pilaftsis,1,"Z.Phys. C55, 275",Radiatively induced neutrino masses and large Higgs neutrino couplings in the standard model with Majorana fields
+U0031,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,AGOSTINI,2001,266,Babu,2,"Nucl.Phys.B619,667",Classification of effective neutrino mass operators
+U0069,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,AGOSTINI,2005,1090,Asaka,3,"Phys. Lett. B 631, 151","The nuMSM, dark matter and neutrino masses"
+U0932,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,AGOSTINI,2007,225,de Gouvea,2,"Phys.Rev.D 77, 013008",A Survey of Lepton Number Violation Via Effective Operators
+U0102,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,AGOSTINI,2009,1027,Atre,4,"JHEP,0905,030",The Search for Heavy Majorana Neutrinos
+U0166,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,AGOSTINI,2013,415,Drewes,1,"Int.J.Mod.Phys.E,22,1330019",The Phenomenology of Right Handed Neutrinos
+U0944,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,AGOSTINI,2013,256,de Gouvea,2,"Prog.Part.Nucl.Phys. 71, 75-92","Lepton Flavor and Number Conservation, and Physics Beyond the Standard Model"
+U0204,3,Geração de massa (seesaw) e violação do número leptônico,Formalismo,AGOSTINI,2015,628,Deppisch,3,"New J.Phys.,17,075019",Neutrinos and Collider Physics
+U0548,4,Leptogênese e assimetria bariônica,Formalismo,AGOSTINI,1967,5876,Sakharov,1,"Pisma Zh.Eksp.Teor.Fiz. 5, 32","Violation of CP Invariance, C asymmetry, and baryon asymmetry of the universe"
+U0970,4,Leptogênese e assimetria bariônica,Formalismo,AGOSTINI,1976,4536,'t Hooft,1,"Phys.Rev.Lett. 37, 8-11",Symmetry Breaking Through Bell-Jackiw Anomalies
+U0603,4,Leptogênese e assimetria bariônica,Formalismo,AGOSTINI,1985,3848,Kuzmin,3,"Phys. Lett. B 155, 36",On the Anomalous Electroweak Baryon Number Nonconservation in the Early Universe
+U0608,4,Leptogênese e assimetria bariônica,Formalismo,AGOSTINI,1986,4907,Fukugita,2,"Phys. Lett. B 174, 45",Baryogenesis Without Grand Unification
+U0636,4,Leptogênese e assimetria bariônica,Formalismo,AGOSTINI,1990,1066,Harvey,2,"Phys. Rev. D 42, 3344-3349 (1990)",Cosmological Baryon and Lepton Number in the Presence of Electroweak Fermion Number Violation
+U0010,4,Leptogênese e assimetria bariônica,Formalismo,AGOSTINI,1998,715,Akhmedov,3,"Phys.Rev.Lett. 81, 1359",Baryogenesis via neutrino oscillations
+U0711,4,Leptogênese e assimetria bariônica,Formalismo,AGOSTINI,2009,36,Shaposhnikov,1,"J. Phys. Conf. Ser. 171, 012005",Baryogenesis
+U0205,4,Leptogênese e assimetria bariônica,Formalismo,AGOSTINI,2015,88,Deppisch,5,"Phys.Rev.D,92,036005",Falsifying High-Scale Baryogenesis with Neutrinoless Double Beta Decay and Lepton Flavor Violation
+U0222,4,Leptogênese e assimetria bariônica,Formalismo,AGOSTINI,2016,72,Drewes,2,"Phys.Lett.B,763,72-79",Neutrinoless double β decay and low scale leptogenesis
+U0948,4,Leptogênese e assimetria bariônica,Formalismo,AGOSTINI,2016,164,Hernández,5,"JHEP 08, 157",Testable Baryogenesis in Seesaw Models
+U0249,4,Leptogênese e assimetria bariônica,Formalismo,AGOSTINI,2017,130,Drewes,4,"JHEP,08,018",Testing the low scale seesaw and leptogenesis
+U0827,4,Leptogênese e assimetria bariônica,Formalismo,AGOSTINI,2017,89,Deppisch,4,"Phys. Rev. D 98, 055029",Neutrinoless Double Beta Decay and the Baryon Asymmetry of the Universe
+U0423,4,Leptogênese e assimetria bariônica,Formalismo,AGOSTINI,2022,30,Drewes,4,,Low-scale leptogenesis with flavour and CP symmetries
+U0424,4,Leptogênese e assimetria bariônica,Formalismo,AGOSTINI,2022,94,Drewes,3,"Phys.Rev.Lett. 128, 051801",Mapping the Viable Parameter Space for Testable Leptogenesis
+U0478,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,1934,1906,Fermi,1,"Z. Phys. 88, 161-177",An attempt of a theory of beta radiation. 1.
+U0480,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,1935,532,Goeppert-Mayer,1,"Phys. Rev. 48, 512-516",Double beta-disintegration
+U0487,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,1939,811,Furry,1,"Phys. Rev. 56, 1184-1193",On transition probabilities in double beta-disintegration
+U0494,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,1948,,Touschek,1,"Z. Phys. 125, 108-132 (1948)",Zur theorie des doppelten β-zerfalls
+U0531,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,1960,,Greuling,2,"Annals Phys. 11, 510",Lepton conservation and double beta-decay
+U0549,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,1968,144,Pontecorvo,1,"Phys.Lett.B 26, 630",Superweak interactions and double beta decay
+U0554,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,1969,151,Primakoff,2,"Phys.Rev. 184, 1925",Nuclear double-beta decay and a new limit on lepton nonconservation
+U0593,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,GONZALEZ-GARCIA,1981,1248,Schechter,2,"Phys. Rev. D 25, 2951",Neutrinoless Double beta Decay in SU(2) x U(1) Theories
+U0600,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,1985,922,Doi,3,"Prog. Theor. Phys. Suppl. 83, 1",Double beta Decay and Majorana Neutrino
+U0668,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,1998,723,Suhonen,2,"Phys. Rept. 300, 123-214",Weak-interaction and nuclear-structure aspects of nuclear double beta decay
+U0121,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,2011,158,Duerr,3,"JHEP06,091",On the Quantitative Impact of the Schechter-Valle Theorem
+U0147,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,2012,696,Kotila,2,"Phys.Rev.C,85,034316",Phase space factors for double-beta decay
+U0152,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,2012,585,Vergados,3,"Rept.Prog.Phys.,75,106301",Theory of Neutrinoless Double Beta Decay
+U0252,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,GONZALEZ-GARCIA,2017,643,Engel,2,"Rept.Prog.Phys.,80,046301",Status and Future of Nuclear Matrix Elements for Neutrinoless Double-Beta Decay: A Review
+U0822,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,2017,106,Cirigliano,4,"Phys. Rev. C 97, 065501",Neutrinoless double-β decay in effective field theory: The light-Majorana neutrino-exchange mechanism
+U0821,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,2018,207,Cirigliano,7,"Phys. Rev. Lett. 120, 202001",New Leading Contribution to Neutrinoless Double-β Decay
+U0422,5,0νββ: formalismo da taxa e da massa efetiva,Formalismo,AGOSTINI,2022,49,Cirigliano,,,Towards precise and accurate calculations of neutrinoless double-beta decay
+U0023,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,1999,196,Vissani,1,"JHEP 06,022","Signal of neutrinoless double beta decay, neutrino spectrum and oscillation scenarios"
+U0032,6,Fenomenologia da massa efetiva m_ββ,Direta,GONZALEZ-GARCIA,2000,47,Vissani,1,"Nucl.Phys.B Proc.Suppl.100,273",Nonoscillation searches of neutrino mass in the age of oscillations
+U0048,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2002,366,Feruglio,3,"Nucl. Phys. B637, 345",Neutrino oscillations and signals in beta and 0nu2beta experiments
+U0063,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2004,180,Fogli,7,"Phys.Rev.D 70, 113003",Observables sensitive to absolute neutrino masses: Constraints and correlations from world neutrino data
+U0686,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2004,81,Bahcall,3,"Phys. Rev. D 70, 033012",What can we learn from neutrinoless double beta decay experiments?
+U0071,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2005,66,Bezrukov,1,"Phys. Rev. D 72, 071303",nu MSM-predictions for neutrinoless double beta decay
+U0111,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2010,48,Simkovic,3,"Phys.Rev.D,82,113015",Few active mechanisms of the neutrinoless double beta-decay and effective mass of Majorana neutrinos
+U0715,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2010,233,Blennow,4,"JHEP 07, 096",Neutrinoless double beta decay in seesaw models
+U0149,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2011,239,Mitra,3,"Nucl.Phys.B,856,26",Neutrinoless Double Beta Decay and Heavy Sterile Neutrinos
+U0941,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2013,137,Bhupal Dev,4,"Phys. Rev. D 88, 091301",Constraining Neutrino Mass from Neutrinoless Double Beta Decay
+U0748,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2014,121,Faessler,4,"Phys. Rev. D 90, 096010",Arbitrary mass Majorana neutrinos in neutrinoless double beta decay
+U0200,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2015,58,Benato,1,"Eur.Phys.J.C,75,563",Effective Majorana Mass and Neutrinoless Double Beta Decay
+U0203,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2015,47,Dell'Oro,4,"JCAP,12,023",The contribution of light Majorana neutrinos to neutrinoless double beta decay and cosmology
+U0215,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2015,20,Agostini,3,"Eur.Phys.J.C,76,176",Probing flavor models with Ge-76-based experiments on neutrinoless double-beta decay
+U0237,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2017,209,Agostini,3,"Phys.Rev.D,96,053001",Discovery probability of next-generation neutrinoless double-β decay experiments
+U0244,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2017,73,Caldwell,4,"Phys.Rev.D,96,073001",Global Bayesian analysis of neutrino mass data
+U0276,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2017,4,Dell'Oro,3,,Testing creation of matter with neutrinoless double beta decay
+U0826,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2018,4,Dell’Oro,3,"J. Phys. Conf. Ser. 1056, 012059",Search for creation of electrons in lab
+U0348,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2019,256,Bolton,3,JHEP 03 (2020) 170,Neutrinoless double beta decay versus other probes of heavy sterile neutrinos
+U0376,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2020,10,Agostini,,"Phys.Rev.D 103, 033008",Discovery probabilities of Majorana neutrinos based on cosmological data
+U0377,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2021,32,Agostini,,"Phys.Rev.C 104, L042501",Testing the inverted neutrino mass ordering with neutrinoless double-beta decay
+U0406,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2021,10,Vissani,1,"Universe 7, 61","What Is Matter According to Particle Physics, and Why Try to Observe Its Creation in a Lab?"
+U0426,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2022,9,Ettengruber,5,,Discovering neutrinoless double-beta decay in the era of precision neutrino cosmology
+U0431,6,Fenomenologia da massa efetiva m_ββ,Direta,AGOSTINI,2022,13,Lisi,2,"Phys.Rev.D 106, 013009",Majorana neutrino mass constraints in the landscape of nuclear matrix elements
+U0062,7,Revisões sobre 0νββ,Direta,AGOSTINI,2004,240,Elliott,2,"J. Phys. G 30, R183",Double beta decay
+U0091,7,Revisões sobre 0νββ,Direta,AGOSTINI,2007,1104,Avignone,3,"Rev.Mod.Phys.,80,481","Double Beta Decay, Majorana Neutrinos, and Neutrino Mass"
+U0114,7,Revisões sobre 0νββ,Direta,AGOSTINI,2011,95,Barabash,1,"Phys.Atom.Nucl.,74,603",Double Beta Decay: Historical Review of 75 Years of Research
+U0127,7,Revisões sobre 0νββ,Direta,AGOSTINI,2011,661,Rodejohann,1,"Int.J.Mod.Phys.E20,1833",Neutrino-less Double Beta Decay and Particle Physics
+U0138,7,Revisões sobre 0νββ,Direta,AGOSTINI,2012,287,Deppisch,3,"J.Phys.G39,124007",Neutrinoless Double Beta Decay and Physics Beyond the Standard Model
+U0139,7,Revisões sobre 0νββ,Direta,AGOSTINI,2012,85,Elliott,1,"Mod.Phys.Lett.A27,1230009",Recent Progress in Double Beta Decay
+U0145,7,Revisões sobre 0νββ,Direta,AGOSTINI,2011,251,Gomez-Cadenas,5,"Riv.Nuovo Cim.,35,29-98",The Search for neutrinoless double beta decay
+U0151,7,Revisões sobre 0νββ,Direta,AGOSTINI,2012,254,Rodejohann,1,"J.Phys.G,39,124008",Neutrinoless double beta decay and neutrino physics
+U0729,7,Revisões sobre 0νββ,Direta,AGOSTINI,2012,144,Giuliani,2,"Adv. High Energy Phys. 2012, 857016",Neutrinoless Double-Beta Decay
+U0174,7,Revisões sobre 0νββ,Direta,AGOSTINI,2012,90,Schwingenheuer,1,"Annalen Phys.,525,269",Status and prospects of searches for neutrinoless double beta decay
+U0181,7,Revisões sobre 0νββ,Direta,AGOSTINI,2013,171,Cremonesi,2,"Adv.High Energy Phys.,2014,951432",Challenges in Double Beta Decay
+U0201,7,Revisões sobre 0νββ,Direta,AGOSTINI,2014,274,Bilenky,2,"Int.J.Mod.Phys.A,30,1530001",Neutrinoless Double-Beta Decay: a Probe of Physics Beyond the Standard Model
+U0947,7,Revisões sobre 0νββ,Direta,AGOSTINI,2015,153,Päs,2,"New J.Phys. 17, 115010",Neutrinoless Double Beta Decay
+U0221,7,Revisões sobre 0νββ,Direta,AGOSTINI,2016,508,Dell'Oro,4,"Adv.High Energy Phys.,2016,2162659",Neutrinoless double beta decay: 2015 review
+U0312,7,Revisões sobre 0νββ,Direta,AGOSTINI,2019,678,Dolinski,3,"Ann.Rev.Nucl.Part.Sci.,69,219",Neutrinoless Double-Beta Decay: Status and Prospects
+U0315,7,Revisões sobre 0νββ,Direta,AGOSTINI,2019,84,Giuliani,7,,Double Beta Decay APPEC Committee Report
+U0033,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,AGOSTINI,2001,703,Klapdor-Kleingrothaus,4,"Mod.Phys.Lett.A16,2409",Evidence for neutrinoless double beta decay
+U0044,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,AGOSTINI,2002,299,Aalseth,26,"Mod. Phys. Lett. A17, 1475",Comment on 'Evidence for Neutrinoless Double Beta Decay'
+U0064,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,AGOSTINI,2004,688,Klapdor-Kleingrothaus,4,"Phys. Lett. B 586, 198",Search for neutrinoless double beta decay with enriched Ge-76 in Gran Sasso 1990-2003
+U0168,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,AGOSTINI,2012,594,Gando,42,"Phys.Rev.Lett.,110,062502",Limit on Neutrinoless $\beta\beta$ Decay of $^{136}$Xe from the First Phase of KamLAND-Zen and Comparison with the Positive Claim in $^{76}$Ge
+U0159,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,AGOSTINI,2013,763,Agostini,114,"Phys.Rev.Lett.,111,122503",Results on Neutrinoless Double-beta Decay of 76Ge from Phase I of the GERDA Experiment
+U0197,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,AGOSTINI;GONZALEZ-GARCIA,2015,230,Arnold,86,"Phys.Rev.D,92,072011",Results of the search for neutrinoless double-β decay in 100Mo with the NEMO-3 experiment
+U0228,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,AGOSTINI,2016,1336,Gando,,"Phys.Rev.Lett.,117,082503",Search for Majorana Neutrinos near the Inverted Mass Hierarchy Region with KamLAND-Zen
+U0267,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,AGOSTINI,2018,23108,Aghanim,,,Planck 2018 results. VI. Cosmological parameters
+U0300,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,AGOSTINI;GONZALEZ-GARCIA,2019,403,Anton,,"Phys.Rev.Lett.,123,161802",Search for Neutrinoless Double-Beta Decay with the Complete EXO-200 Dataset
+U0335,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,AGOSTINI;GONZALEZ-GARCIA,2020,666,Agostini,,"Phys.Rev.Lett.,125,252502",Final Results of GERDA on the Search for Neutrinoless Double-β Decay
+U0965,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,AGOSTINI,2021,146,Di Valentino,3,"Phys. Rev. D 104 (8), 083504",Most constraining cosmological neutrino mass bounds
+U0412,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,AGOSTINI;GONZALEZ-GARCIA,2021,260,Adams,,"Nature 604, 53",Search for Majorana neutrinos exploiting millikelvin cryogenics with CUORE
+U0411,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,AGOSTINI,2022,498,Abe,,,Search for the Majorana Nature of Neutrinos in the Inverted Mass Ordering Region with KamLAND-Zen
+U0416,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,AGOSTINI;GONZALEZ-GARCIA,2022,177,Arnquist,,,Final Result of the Majorana Demonstrator's Search for Neutrinoless Double-β Decay in 76Ge
+U0418,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,GONZALEZ-GARCIA,2022,105,Augier,,"Eur.Phys.J.C 82, 1033",Final results on the 0νββ decay half-life limit of 100Mo from the CUPID-Mo experiment
+U0434,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,GONZALEZ-GARCIA,2022,100,Azzolini,,"Phys.Rev.Lett. 129, 111801",Final Result on the Neutrinoless Double Beta Decay of $^{82}$Se with CUPID-0
+U0449,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,GONZALEZ-GARCIA,2024,230,Abe,,,Search for Majorana Neutrinos with the Complete KamLAND-Zen Dataset
+U0451,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,GONZALEZ-GARCIA,2024,50,Agrawal,,"Phys. Rev. Lett. 134, 8, 082501",Improved limit on neutrinoless double beta decay of 100Mo from AMoRE-I
+U0455,8,Limites experimentais sobre m_ββ e escala absoluta de massa,Direta,GONZALEZ-GARCIA,2024,362,Aker,,"Science 388, 6743, adq9592",Direct neutrino-mass measurement based on 259 days of KATRIN data
+U0017,9,Evidência de massa e parâmetros de oscilação,Direta,GONZALEZ-GARCIA,1998,9245,Fukuda,121,"Phys.Rev.Lett. 81, 1562",Evidence for oscillation of atmospheric neutrinos
+U0030,9,Evidência de massa e parâmetros de oscilação,Direta,AGOSTINI;GONZALEZ-GARCIA,2001,3884,Ahmad,178,"Phys.Rev.Lett.87,071301",Measurement of the rate of nu_e+d -> p+p+e- interactions produced by 8B solar neutrinos at the Sudbury Neutrino Observatory
+U0051,9,Evidência de massa e parâmetros de oscilação,Direta,GONZALEZ-GARCIA,2002,5290,Ahmad,178,"Phys. Rev. Lett. 89, 011301",Direct evidence for neutrino flavor transformation from neutral current interactions in the Sudbury Neutrino Observatory
+U0140,9,Evidência de massa e parâmetros de oscilação,Direta,GONZALEZ-GARCIA,2012,3224,An,270,"Phys.Rev.Lett.108,171803",Observation of electron-antineutrino disappearance at Daya Bay
+U0188,9,Evidência de massa e parâmetros de oscilação,Direta,GONZALEZ-GARCIA,2014,699,Gonzalez-Garcia,3,"JHEP,11,052",Updated fit to three neutrino mixing: status of leptonic CP violation
+U0353,9,Evidência de massa e parâmetros de oscilação,Direta,AGOSTINI,2020,1665,Esteban,5,JHEP 09 (2020) 178,The fate of hints: updated global analysis of three-flavor neutrino oscillations
+U0401,9,Evidência de massa e parâmetros de oscilação,Direta,GONZALEZ-GARCIA,2020,959,de Salas,,"JHEP 02, 071",2020 global reassessment of the neutrino oscillation picture
+U0389,9,Evidência de massa e parâmetros de oscilação,Direta,AGOSTINI,2021,295,Capozzi,6,"Phys.Rev.D 104, 083031",The unfinished fabric of the three neutrino paradigm
+U0447,9,Evidência de massa e parâmetros de oscilação,Direta,GONZALEZ-GARCIA,2024,741,Esteban,,"JHEP 12, 216",NuFit-6.0: updated global analysis of three-flavor neutrino oscillations
+U0452,9,Evidência de massa e parâmetros de oscilação,Direta,GONZALEZ-GARCIA,2025,93,Capozzi,,"Phys. Rev. D 111, 9, 093006",Neutrino masses and mixing: Entering the era of subpercent precision

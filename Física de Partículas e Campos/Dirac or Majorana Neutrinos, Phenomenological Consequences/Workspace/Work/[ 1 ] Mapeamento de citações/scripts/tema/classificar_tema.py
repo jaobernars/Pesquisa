@@ -3,7 +3,7 @@
 (natureza Dirac vs Majorana, 0nubb, PMNS estendida com fases de CP, massa efetiva de Majorana).
 
 Entrada: dados/citacoes/dados_citacoes.csv   Saida: dados/citacoes/dados_citacoes_tema.csv + shortlist
-Uso: python3 scripts/consolidacao_tema/classificar_tema.py [--top 40]
+Uso: python3 scripts/tema/classificar_tema.py [--top 40]
 """
 import csv,re,argparse,collections
 # peso 3 = nucleo teorico do projeto | 2 = adjacente direto | 1 = contexto
