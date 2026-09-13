@@ -1,0 +1,691 @@
+[
+ {
+  "bloco": "B01",
+  "n": 20,
+  "metodos": {
+   "arxiv": 20
+  },
+  "ano_min": "1979",
+  "ano_max": "1999",
+  "status": "concluido",
+  "data": "2026-09-06",
+  "ok": 19,
+  "revisar": 1
+ },
+ {
+  "bloco": "B02",
+  "n": 20,
+  "metodos": {
+   "arxiv": 19,
+   "titulo": 1
+  },
+  "ano_min": "1999",
+  "ano_max": "2001",
+  "status": "concluido",
+  "data": "2026-09-06",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B03",
+  "n": 20,
+  "metodos": {
+   "arxiv": 19,
+   "titulo": 1
+  },
+  "ano_min": "2001",
+  "ano_max": "2003",
+  "status": "concluido",
+  "data": "2026-09-06",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B04",
+  "n": 20,
+  "metodos": {
+   "arxiv": 19,
+   "titulo": 1
+  },
+  "ano_min": "2004",
+  "ano_max": "2006",
+  "status": "concluido",
+  "data": "2026-09-06",
+  "ok": 19,
+  "revisar": 1
+ },
+ {
+  "bloco": "B05",
+  "n": 20,
+  "metodos": {
+   "arxiv": 19,
+   "titulo": 1
+  },
+  "ano_min": "2006",
+  "ano_max": "2008",
+  "status": "concluido",
+  "data": "2026-09-06",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B06",
+  "n": 20,
+  "metodos": {
+   "arxiv": 20
+  },
+  "ano_min": "2008",
+  "ano_max": "2011",
+  "status": "concluido",
+  "data": "2026-09-06",
+  "ok": 19,
+  "revisar": 1
+ },
+ {
+  "bloco": "B07",
+  "n": 20,
+  "metodos": {
+   "arxiv": 20
+  },
+  "ano_min": "2011",
+  "ano_max": "2012",
+  "status": "concluido",
+  "data": "2026-09-06",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B08",
+  "n": 20,
+  "metodos": {
+   "arxiv": 20
+  },
+  "ano_min": "2012",
+  "ano_max": "2013",
+  "status": "concluido",
+  "data": "2026-09-06",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B09",
+  "n": 20,
+  "metodos": {
+   "arxiv": 19,
+   "titulo": 1
+  },
+  "ano_min": "2013",
+  "ano_max": "2014",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B10",
+  "n": 20,
+  "metodos": {
+   "arxiv": 20
+  },
+  "ano_min": "2014",
+  "ano_max": "2015",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B11",
+  "n": 20,
+  "metodos": {
+   "arxiv": 20
+  },
+  "ano_min": "2015",
+  "ano_max": "2016",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B12",
+  "n": 20,
+  "metodos": {
+   "arxiv": 19,
+   "titulo": 1
+  },
+  "ano_min": "2016",
+  "ano_max": "2017",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B13",
+  "n": 20,
+  "metodos": {
+   "arxiv": 20
+  },
+  "ano_min": "2017",
+  "ano_max": "2017",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B14",
+  "n": 20,
+  "metodos": {
+   "arxiv": 19,
+   "titulo": 1
+  },
+  "ano_min": "2017",
+  "ano_max": "2018",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B15",
+  "n": 20,
+  "metodos": {
+   "arxiv": 19,
+   "titulo": 1
+  },
+  "ano_min": "2018",
+  "ano_max": "2019",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B16",
+  "n": 20,
+  "metodos": {
+   "arxiv": 20
+  },
+  "ano_min": "2019",
+  "ano_max": "2019",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B17",
+  "n": 20,
+  "metodos": {
+   "arxiv": 20
+  },
+  "ano_min": "2019",
+  "ano_max": "2020",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B18",
+  "n": 20,
+  "metodos": {
+   "arxiv": 20
+  },
+  "ano_min": "2020",
+  "ano_max": "2020",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B19",
+  "n": 20,
+  "metodos": {
+   "arxiv": 20
+  },
+  "ano_min": "2020",
+  "ano_max": "2021",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B20",
+  "n": 20,
+  "metodos": {
+   "arxiv": 20
+  },
+  "ano_min": "2021",
+  "ano_max": "2021",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B21",
+  "n": 20,
+  "metodos": {
+   "arxiv": 20
+  },
+  "ano_min": "2021",
+  "ano_max": "2022",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B22",
+  "n": 20,
+  "metodos": {
+   "arxiv": 20
+  },
+  "ano_min": "2022",
+  "ano_max": "2023",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B23",
+  "n": 20,
+  "metodos": {
+   "arxiv": 19,
+   "titulo": 1
+  },
+  "ano_min": "1913",
+  "ano_max": "2025",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B24",
+  "n": 20,
+  "metodos": {
+   "titulo": 16,
+   "journal": 4
+  },
+  "ano_min": "1915",
+  "ano_max": "1935",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 10,
+  "revisar": 10
+ },
+ {
+  "bloco": "B25",
+  "n": 20,
+  "metodos": {
+   "titulo": 20
+  },
+  "ano_min": "1816",
+  "ano_max": "1949",
+  "status": "concluido",
+  "data": "2026-09-07",
+  "ok": 13,
+  "revisar": 7
+ },
+ {
+  "bloco": "B26",
+  "n": 20,
+  "metodos": {
+   "titulo": 20
+  },
+  "ano_min": "1949",
+  "ano_max": "1957",
+  "status": "concluido",
+  "data": "2026-09-08",
+  "ok": 12,
+  "revisar": 8
+ },
+ {
+  "bloco": "B27",
+  "n": 20,
+  "metodos": {
+   "titulo": 17,
+   "journal": 3
+  },
+  "ano_min": "1957",
+  "ano_max": "1963",
+  "status": "concluido",
+  "data": "2026-09-08",
+  "ok": 15,
+  "revisar": 5
+ },
+ {
+  "bloco": "B28",
+  "n": 20,
+  "metodos": {
+   "titulo": 15,
+   "journal": 5
+  },
+  "ano_min": "1964",
+  "ano_max": "1973",
+  "status": "concluido",
+  "data": "2026-09-08",
+  "ok": 18,
+  "revisar": 2
+ },
+ {
+  "bloco": "B29",
+  "n": 20,
+  "metodos": {
+   "titulo": 17,
+   "journal": 3
+  },
+  "ano_min": "1974",
+  "ano_max": "1980",
+  "status": "concluido",
+  "data": "2026-09-08",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B30",
+  "n": 20,
+  "metodos": {
+   "titulo": 13,
+   "journal": 7
+  },
+  "ano_min": "1980",
+  "ano_max": "1985",
+  "status": "concluido",
+  "data": "2026-09-08",
+  "ok": 19,
+  "revisar": 1
+ },
+ {
+  "bloco": "B31",
+  "n": 20,
+  "metodos": {
+   "journal": 8,
+   "titulo": 12
+  },
+  "ano_min": "1985",
+  "ano_max": "1988",
+  "status": "concluido",
+  "data": "2026-09-10",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B32",
+  "n": 20,
+  "metodos": {
+   "titulo": 12,
+   "journal": 8
+  },
+  "ano_min": "1988",
+  "ano_max": "1991",
+  "status": "concluido",
+  "data": "2026-09-10",
+  "ok": 18,
+  "revisar": 2
+ },
+ {
+  "bloco": "B33",
+  "n": 20,
+  "metodos": {
+   "titulo": 14,
+   "journal": 5,
+   "doi": 1
+  },
+  "ano_min": "1991",
+  "ano_max": "1996",
+  "status": "concluido",
+  "data": "2026-09-10",
+  "ok": 19,
+  "revisar": 1
+ },
+ {
+  "bloco": "B34",
+  "n": 20,
+  "metodos": {
+   "titulo": 15,
+   "journal": 5
+  },
+  "ano_min": "1997",
+  "ano_max": "2002",
+  "status": "concluido",
+  "data": "2026-09-10",
+  "ok": 19,
+  "revisar": 1
+ },
+ {
+  "bloco": "B35",
+  "n": 20,
+  "metodos": {
+   "titulo": 20
+  },
+  "ano_min": "2003",
+  "ano_max": "2007",
+  "status": "concluido",
+  "data": "2026-09-10",
+  "ok": 17,
+  "revisar": 3
+ },
+ {
+  "bloco": "B36",
+  "n": 20,
+  "metodos": {
+   "titulo": 19,
+   "journal": 1
+  },
+  "ano_min": "2007",
+  "ano_max": "2011",
+  "status": "concluido",
+  "data": "2026-09-10",
+  "ok": 19,
+  "revisar": 1
+ },
+ {
+  "bloco": "B37",
+  "n": 20,
+  "metodos": {
+   "titulo": 19,
+   "doi": 1
+  },
+  "ano_min": "2011",
+  "ano_max": "2013",
+  "status": "concluido",
+  "data": "2026-09-10",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B38",
+  "n": 20,
+  "metodos": {
+   "titulo": 20
+  },
+  "ano_min": "2013",
+  "ano_max": "2015",
+  "status": "concluido",
+  "data": "2026-09-10",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B39",
+  "n": 20,
+  "metodos": {
+   "titulo": 20
+  },
+  "ano_min": "2015",
+  "ano_max": "2016",
+  "status": "concluido",
+  "data": "2026-09-10",
+  "ok": 16,
+  "revisar": 4
+ },
+ {
+  "bloco": "B40",
+  "n": 20,
+  "metodos": {
+   "titulo": 20
+  },
+  "ano_min": "2016",
+  "ano_max": "2017",
+  "status": "concluido",
+  "data": "2026-09-10",
+  "ok": 19,
+  "revisar": 1
+ },
+ {
+  "bloco": "B41",
+  "n": 20,
+  "metodos": {
+   "titulo": 20
+  },
+  "ano_min": "1994",
+  "ano_max": "2018",
+  "status": "concluido",
+  "data": "2026-09-12",
+  "ok": 19,
+  "revisar": 1
+ },
+ {
+  "bloco": "B42",
+  "n": 20,
+  "metodos": {
+   "titulo": 19,
+   "doi": 1
+  },
+  "ano_min": "2018",
+  "ano_max": "2018",
+  "status": "concluido",
+  "data": "2026-09-12",
+  "ok": 18,
+  "revisar": 2
+ },
+ {
+  "bloco": "B43",
+  "n": 20,
+  "metodos": {
+   "titulo": 20
+  },
+  "ano_min": "2018",
+  "ano_max": "2019",
+  "status": "concluido",
+  "data": "2026-09-12",
+  "ok": 20,
+  "revisar": 0
+ },
+ {
+  "bloco": "B44",
+  "n": 20,
+  "metodos": {
+   "titulo": 20
+  },
+  "ano_min": "2019",
+  "ano_max": "2020",
+  "status": "concluido",
+  "data": "2026-09-12",
+  "ok": 19,
+  "revisar": 1
+ },
+ {
+  "bloco": "B45",
+  "n": 20,
+  "metodos": {
+   "titulo": 20
+  },
+  "ano_min": "2020",
+  "ano_max": "2021",
+  "status": "concluido",
+  "data": "2026-09-12",
+  "ok": 19,
+  "revisar": 1
+ },
+ {
+  "bloco": "B46",
+  "n": 20,
+  "metodos": {
+   "titulo": 20
+  },
+  "ano_min": "2021",
+  "ano_max": "2024",
+  "status": "concluido",
+  "data": "2026-09-12",
+  "ok": 14,
+  "revisar": 6
+ },
+ {
+  "bloco": "B47",
+  "n": 2,
+  "metodos": {
+   "titulo": 2
+  },
+  "ano_min": "2024",
+  "ano_max": "2025",
+  "status": "concluido",
+  "data": "2026-09-12",
+  "ok": 1,
+  "revisar": 1
+ },
+ {
+  "bloco": "B48",
+  "n": 20,
+  "metodos": {
+   "titulo": 11,
+   "arxiv": 8,
+   "doi": 1
+  },
+  "ano_min": "1966",
+  "ano_max": "2013",
+  "status": "concluido",
+  "data": "2026-09-12",
+  "ok": 19,
+  "revisar": 1
+ },
+ {
+  "bloco": "B49",
+  "n": 20,
+  "metodos": {
+   "titulo": 14,
+   "arxiv": 6
+  },
+  "ano_min": "2013",
+  "ano_max": "2020",
+  "status": "concluido",
+  "data": "2026-09-12",
+  "ok": 18,
+  "revisar": 2
+ },
+ {
+  "bloco": "B50",
+  "n": 6,
+  "metodos": {
+   "arxiv": 3,
+   "titulo": 3
+  },
+  "ano_min": "2020",
+  "ano_max": "2022",
+  "status": "concluido",
+  "data": "2026-09-12",
+  "ok": 5,
+  "revisar": 1
+ },
+ {
+  "bloco": "B51",
+  "n": 2,
+  "metodos": {
+   "titulo": 2
+  },
+  "ano_min": "1948",
+  "ano_max": "1976",
+  "status": "concluido",
+  "data": "2026-09-12",
+  "ok": 2,
+  "revisar": 0
+ }
+]
